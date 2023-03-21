@@ -9,15 +9,15 @@ export function HomePage(props){
         <section className="features-section">
             <h2>Featured Products</h2>
             <ul>
-                <li className="featured products">
+                <li className="featured product">
                     <img src="" alt=""/>
                     <h3>featured product 1</h3>
                 </li>
-                <li className="featured products">
+                <li className="featured product">
                     <img src="" alt=""/>
                     <h3>Featured product 2</h3>
                 </li>
-                <li className="featured products">
+                <li className="featured product">
                     <img src="" alt=""/>
                     <h3>featured product 3</h3>
                 </li>
@@ -38,6 +38,12 @@ export function HomePage(props){
                     <h3>Product 3</h3>
                 </li>
             </ul>
+        </section>
+        <section className="button-section">
+            <div>
+                <button className="button">Button 1</button>
+                <button className="button">Button 2</button>
+            </div>
         </section>
     </div>
     )
