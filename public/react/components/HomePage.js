@@ -2,8 +2,8 @@ import React from 'react';
 
 export function HomePage(props){
     return (
-    <div className= "homepage container">
-        <section class="Greeting">
+    <div className= "homepage">
+        <section className="Greeting">
             <h1>Action Quote</h1>
         </section>
         <section className="features-section">
@@ -11,7 +11,7 @@ export function HomePage(props){
             <ul>
                 <li className="featured product">
                     <img src="" alt=""/>
-                    <h3>featured product 1</h3>
+                    <h3>Featured product 1</h3>
                 </li>
                 <li className="featured product">
                     <img src="" alt=""/>
@@ -19,11 +19,11 @@ export function HomePage(props){
                 </li>
                 <li className="featured product">
                     <img src="" alt=""/>
-                    <h3>featured product 3</h3>
+                    <h3>Featured product 3</h3>
                 </li>
             </ul>
         </section>
-        <section class="products-section">
+        <section className="products-section">
             <ul>
                 <li className="product">
                     <img src="" alt=""/>
