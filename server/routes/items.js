@@ -22,6 +22,7 @@ router.get("/:id", async (req, res, next) => {
   }
 });
 
+//POST /item/
 router.post("/", async (req, res) => {
   try {
     const item = await Item.create(req.body);
@@ -30,5 +31,17 @@ router.post("/", async (req, res) => {
     console.error("Couldn't create new item", error);
   }
 });
+
+//PUT /item/:id
+router.put("/:id", async (req, res) => {
+  try {
+    const item = await Item.findByPk(req.params.id);
+    await item.update(req.body);
+    res.status(200).send(item);
+  } catch (error) {
+    console.error("Couldn't update item", error);
+  }
+})
+
 
 module.exports = router;
