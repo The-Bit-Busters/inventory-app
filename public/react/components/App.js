@@ -10,6 +10,7 @@ import apiURL from '../api';
 import Contact from './Contact';
 import Footer from './Footer';
 import Cart from './Cart';
+import { ProductPage } from './ProductPage';
 
 export const App = () => {
 
@@ -40,6 +41,7 @@ export const App = () => {
 				<Route path="/about" element={<About />} />
 				<Route path="/contact" element={<Contact />} />
 				<Route path="/cart" element={<Cart />} />
+				<Route path="/product/:id" element={<ProductPage items={items}/>} />
 			</Routes>
 			</div>
 			<Footer />
