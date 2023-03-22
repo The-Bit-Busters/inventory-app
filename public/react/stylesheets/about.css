@@ -8,9 +8,10 @@
     background-color: #fff;
     color: #444;
     height: 60vh;
-  }
+    margin-bottom: 1rem;
+}
 
-  .box {
+.box {
     color: #444;
     background-color: #fff;
     border-radius: 5px;
@@ -20,29 +21,29 @@
     width: 100%;
     border: 2px solid red;
 
-  }
+}
 
-  .a {
+.a {
     grid-column: col / span 2;
     grid-row: row ;
-  }
-  .b {
+}
+.b {
     grid-column: col 3 / span 2 ;
     grid-row: row ;
-  }
-  .c {
+}
+.c {
     grid-column: col ;
     grid-row: row 2 ;
-  }
-  .d {
+}
+.d {
     grid-column: col 2 / span 3 ;
     grid-row: row 2 ;
-  }
+}
 
-  .e {
+.e {
     grid-column: col / span 4;
     grid-row: row 3;
-  }
+}
 span {
     font-weight: 300;
     color: red;

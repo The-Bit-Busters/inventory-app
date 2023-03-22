@@ -7,9 +7,8 @@ const Footer = () => {
     <div className="footer-container">
         <div className="left">
             <div className="location">
-                <FaHome size={20} style={{ marginRight: "2rem"}}/>
                 <div className="home">
-                    <p>New York, New York</p>
+                    <p> <FaHome size={20} style={{ marginRight: "2rem"}}/> New York, New York</p>  
                 </div>
             </div>
             <div className="phone">
