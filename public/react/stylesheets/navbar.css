@@ -1,0 +1,23 @@
+.nav-bar{
+    width: 100%;	
+    margin-top: 0;	
+    background-color: white;
+    border: 2px solid red;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.navbar-right {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+li {
+    list-style: none;
+}

@@ -1,22 +1,27 @@
 import React from 'react'
-import './navbar.css'
+import '../stylesheets/navbar.css'
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <nav>
-        <h1>Bit Buckets</h1>
-        <form>
-            <input type="text" placeholder="Search" />
-            <button>Search</button>
-        </form>
-        <ul className='navbar-right'>
-            <li>Home</li>
-            <li>About</li>
-            <li>Help</li>
-            <li>Your Cart</li>
-        </ul>
-        
-    </nav>
+    <div>
+        <nav className='nav-bar'>
+            <h1>Bit Buckets</h1>
+            <form>
+                <input type="text" placeholder="Search" />
+                <button>Search</button>
+            </form>
+            <ul className='navbar-right'>
+                <Link to='/' style={{ textDecoration: 'none' }}>
+                    <li>Home</li>
+                </Link>
+                <li>About</li>
+                <li>Help</li>
+                <li>Your Cart</li>
+            </ul>
+            
+        </nav>
+    </div>
   )
 }
 

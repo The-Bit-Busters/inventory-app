@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { ItemsList } from './ItemsList';
 import NavBar  from './NavBar';
 import { HomePage } from './HomePage';
+import ShopAll from './ShopAll';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import '../stylesheets/app.css';
 
 // import and prepend the api url to any fetch calls
 import apiURL from '../api';
@@ -28,10 +30,13 @@ export const App = () => {
 	return (
 		<main>	
 			<NavBar />
-      <h1>The Bit Buckets Inventory!</h1>
-			<h2>All things 🔥</h2>
-			<ItemsList items={items} />
-			<HomePage/>
+			<div className='mainContainer'>
+			<Routes>
+				<Route path="/" element={<HomePage />} />
+				<Route path="/shopall" element={<ShopAll />} />
+			</Routes>
+			</div>
+
 		</main>
 	)
 }

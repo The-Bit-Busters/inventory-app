@@ -1,14 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import '../stylesheets/homepage.css';
 
 export function HomePage(props){
     return (
     <div className= "homepage">
-        <section className="Greeting">
-            <h1>Action Quote</h1>
+        <section className="greeting">
+            <h1 id='home-title'>The Bit Buckets Inventory!</h1>
+				<h2>All things 🔥</h2>
         </section>
         <section className="features-section">
-            <h2>Featured Products</h2>
-            <ul>
+            <h2 id='featured-title'>Featured Products</h2>
+            <ul className='featured-parent'>
                 <li className="featured product">
                     <img src="" alt=""/>
                     <h3>Featured product 1</h3>
@@ -24,7 +27,9 @@ export function HomePage(props){
             </ul>
         </section>
         <section className="products-section">
-            <ul>
+            <h2 id='featured-title'>Products</h2>
+
+            <ul className='featured-parent'>
                 <li className="product">
                     <img src="" alt=""/>
                     <h3>Product 1</h3>
@@ -39,11 +44,10 @@ export function HomePage(props){
                 </li>
             </ul>
         </section>
-        <section className="button-section">
-            <div>
-                <button className="button">Button 1</button>
-                <button className="button">Button 2</button>
-            </div>
+        <section  className="button-section">
+            <Link to='/shopall' style={{ textDecoration: 'none' }}>
+                <button className="shopall-button">All Items</button>
+            </Link>
         </section>
     </div>
     )
