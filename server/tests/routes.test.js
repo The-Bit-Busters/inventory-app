@@ -47,7 +47,19 @@ describe("Item model", () => {
     expect(allUsers.length).toBe(0);
   });
 
-// need get/:id
+  test("should return the specific item", async () => {
+    const item = await Item.create({
+      title: "Test item",
+      price: 35,
+      description: "This is a test item",
+      category: "Test category",
+      image: "test.jpg",
+    });
+
+    const theItem = await Item.findByPk(item.id);
+    expect(theItem.title).toBe("Test item");
+    expect(theItem.price).toBe(35);
+  })
 
   test("should return a 404 error if the item does not exist", async () => {
     const res = await request(app).get("/999");
