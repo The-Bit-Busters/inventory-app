@@ -38,7 +38,10 @@
     border: 1px solid black;
     height: 100%;
     width: 33%;
+
 }
+
+
 .button-section{
     display: flex;
     justify-content: center;
@@ -65,4 +68,11 @@
     margin-bottom: 0.5em;
     background-color: white;
     border: 1px solid black;
+}
+
+/* create a hover effect for the product name with pointer */
+.productName:hover,
+.randomizedImgs:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
 }

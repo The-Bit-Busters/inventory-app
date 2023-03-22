@@ -34,7 +34,6 @@ export function HomePage({ items }) {
     <div className= "homepage">
         <section className="greeting">
             <h1 id='home-title'>The Bit Buckets Inventory!</h1>
-				<h2>All things 🔥</h2>
         </section>
         <section className="features-section">
             <h2 id='featured-title'>Featured Products</h2>
