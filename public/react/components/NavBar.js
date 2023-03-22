@@ -10,7 +10,9 @@ const NavBar = () => {
         borderBottom: '.5px solid rgb(172, 172, 172)',
       }}>
         <nav className='nav-bar'>
-            <h1>Bit Buckets</h1>
+                <Link to='/' style={{ textDecoration: 'none' }}>
+                    <h1>Bit Buckets</h1>
+                </Link>
             <form>
                 <IoIosSearch />
                 <input className='searchBar' type="text" placeholder="Search" />
