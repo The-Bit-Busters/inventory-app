@@ -1,5 +1,5 @@
 const { Item } = require("../models/index");
-const app = require('../app');
+const app = require("../app");
 const request = require("supertest");
 import { sequelize } from "../db";
 import "regenerator-runtime/runtime";
@@ -59,7 +59,7 @@ describe("Item model", () => {
     const theItem = await Item.findByPk(item.id);
     expect(theItem.title).toBe("Test item");
     expect(theItem.price).toBe(35);
-  })
+  });
 
   test("should return a 404 error if the item does not exist", async () => {
     const res = await request(app).get("/999");
