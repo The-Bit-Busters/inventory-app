@@ -9,6 +9,7 @@ import About from './About';
 import apiURL from '../api';
 import Contact from './Contact';
 import Footer from './Footer';
+import Cart from './Cart';
 
 export const App = () => {
 
@@ -38,6 +39,7 @@ export const App = () => {
 				<Route path="/shopall" element={<ShopAll />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/contact" element={<Contact />} />
+				<Route path="/cart" element={<Cart />} />
 			</Routes>
 			</div>
 			<Footer />
