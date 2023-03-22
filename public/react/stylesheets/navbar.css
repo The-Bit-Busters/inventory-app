@@ -1,7 +1,6 @@
 .nav-bar{
     width: 100%;	
     margin-top: 0;	
-    background-color: white;
     border: 2px solid red;
 }
 nav {
@@ -20,4 +19,12 @@ nav {
 
 li {
     list-style: none;
+}
+
+.searchBar {
+    border: 0;
+    border-radius: 4px;
+    width: 300px;
+    font-size: 20px;
+    margin-top: 20px;
 }

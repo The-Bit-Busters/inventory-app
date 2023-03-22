@@ -1,15 +1,19 @@
 import React from 'react'
 import '../stylesheets/navbar.css'
 import { Link } from 'react-router-dom';
+import { IoIosAddCircleOutline, IoIosSearch } from 'react-icons/io';
 
 const NavBar = () => {
   return (
-    <div>
+    <div  style={{
+        backgroundColor: 'white',
+        borderBottom: '.5px solid rgb(172, 172, 172)',
+      }}>
         <nav className='nav-bar'>
             <h1>Bit Buckets</h1>
             <form>
-                <input type="text" placeholder="Search" />
-                <button>Search</button>
+                <IoIosSearch />
+                <input className='searchBar' type="text" placeholder="Search" />
             </form>
             <ul className='navbar-right'>
                 <Link to='/' style={{ textDecoration: 'none' }}>
