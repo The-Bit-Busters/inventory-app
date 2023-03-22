@@ -31,13 +31,13 @@
     align-items: center;
     justify-content: space-around;
     height: 60%;
+    flex-wrap: wrap;
 }
 
 .product {
-    border: 1px solid red;
+    border: 1px solid black;
     height: 100%;
     width: 33%;
-
 }
 .button-section{
     display: flex;
@@ -49,4 +49,20 @@
     margin-bottom: 2em;
     border: 1px solid red;
     font-size: 1.5em;
+}
+
+.randomizedImgs {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    background-color: white;
+}
+
+.productName {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+    background-color: white;
+    border: 1px solid black;
 }
