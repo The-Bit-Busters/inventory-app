@@ -41,21 +41,20 @@ router.put("/:id", async (req, res) => {
   } catch (error) {
     console.error("Couldn't update item", error);
   }
-})
+});
 
 // DELETE /items/:id
 router.delete("/:id", async (req, res) => {
   try {
-    const id = req.params.id
+    const id = req.params.id;
     await Item.destroy({
-      where: {id}
-    })
+      where: { id },
+    });
     const items = await Item.findAll();
-        res.status(200).send(items);
+    res.status(200).send(items);
   } catch (error) {
     console.error("Couldn't delete item", error);
   }
 });
-
 
 module.exports = router;
