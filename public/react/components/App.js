@@ -28,7 +28,7 @@ export const App = () => {
 	}, []);
 
 	return (
-		<main>	
+		<main className='appContainer'>	
 			<NavBar />
 			<div className='mainContainer'>
 			<Routes>
