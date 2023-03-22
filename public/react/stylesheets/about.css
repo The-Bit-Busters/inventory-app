@@ -41,3 +41,7 @@
     grid-column: col / span 4;
     grid-row: row 3;
   }
+span {
+    font-weight: 300;
+    color: red;
+}
