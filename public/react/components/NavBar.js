@@ -9,19 +9,21 @@ const NavBar = () => {
         backgroundColor: 'white',
         borderBottom: '.5px solid rgb(172, 172, 172)',
       }}>
-        <nav className='nav-bar'>
+        <nav className='nav-bar navbar-static-top'>
                 <Link to='/' style={{ textDecoration: 'none' }}>
                     <h1>Bit Buckets</h1>
                 </Link>
             <form>
-                <IoIosSearch />
+                <IoIosSearch className='searchIcon' size='20px' />
                 <input className='searchBar' type="text" placeholder="Search" />
             </form>
             <ul className='navbar-right'>
                 <Link to='/' style={{ textDecoration: 'none' }}>
                     <li>Home</li>
                 </Link>
-                <li>About</li>
+                <Link to='/about' style={{ textDecoration: 'none' }}>
+                    <li>About</li>
+                </Link>
                 <li>Help</li>
                 <li>Your Cart</li>
             </ul>
