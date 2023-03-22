@@ -24,7 +24,9 @@ const NavBar = () => {
                 <Link to='/about' style={{ textDecoration: 'none' }}>
                     <li>About</li>
                 </Link>
-                <li>Help</li>
+                <Link to='/contact' style={{ textDecoration: 'none' }}>
+                    <li>Contact Us</li>
+                </Link>
                 <li>Your Cart</li>
             </ul>
             
