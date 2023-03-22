@@ -30,36 +30,33 @@ export function HomePage({ items }) {
     fetchFeaturedProducts();
     fetchTopSellers();
   }, [items]);
-
-
-  return (
-    <div className="homepage">
-      <section className="greeting">
-        <h1 id="home-title">The Bit Buckets Inventory!</h1>
-        <h2>All things 🔥</h2>
-      </section>
-      <section className="features-section">
-        <h2 id="featured-title">Featured Products</h2>
-        <ul className="featured-parent">
-          {featured.map((item) => {
+    return (
+    <div className= "homepage">
+        <section className="greeting">
+            <h1 id='home-title'>The Bit Buckets Inventory!</h1>
+        </section>
+        <section className="features-section">
+            <h2 id='featured-title'>Featured Products</h2>
+            <ul className='featured-parent'>
+            {featured.map((item) => {
             return (
-              <li className="featured product" key={item.id}>
-                <img src={item.image} alt={item.title} />
-                <h3>{item.title}</h3>
+              <li className="product" key={item.id}>
+                <img className="randomizedImgs" src={item.image} alt={item.title} />
+                <h3 className="productName">{item.title.substring(0, 20)}</h3>
               </li>
             );
           })}
-        </ul>
-      </section>
-      <section className="products-section">
-        <h2 id="featured-title">Top Sellers</h2>
+            </ul>
+        </section>
+        <section className="products-section">
+            <h2 id='featured-title'>Products</h2>
 
         <ul className="featured-parent">
         {topSellers.map((item) => {
             return (
               <li className="product" key={item.id}>
-                <img src={item.image} alt={item.title} />
-                <h3>{item.title}</h3>
+                <img className="randomizedImgs" src={item.image} alt={item.title} />
+                <h3 className="productName">{item.title.substring(0, 20)}</h3>
               </li>
             );
           })}
