@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import NavBar  from './NavBar';
 import { HomePage } from './HomePage';
@@ -13,19 +14,22 @@ import Cart from './Cart';
 import { ProductPage } from './ProductPage';
 
 export const App = () => {
+  const [items, setItems] = useState([]);
 
-	const [items, setItems] = useState([]);
+  async function fetchItems() {
+    try {
+      const response = await fetch(`${apiURL}/items`);
+      const itemsData = await response.json();
+      setItems(itemsData);
+    } catch (err) {
+      console.log("Oh no an error! ", err);
+    }
+  }
 
-	async function fetchItems(){
-		try {
-			const response = await fetch(`${apiURL}/items`);
-			const itemsData = await response.json();
-			// console.log(itemsData);
-			setItems(itemsData);
-		} catch (err) {
-			console.log("Oh no an error! ", err)
-		}
-	}
+  useEffect(() => {
+    fetchItems();
+  }, []);
+
 
 	useEffect(() => {
 		fetchItems();

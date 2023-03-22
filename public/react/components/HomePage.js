@@ -63,6 +63,7 @@ export function HomePage({ items }) {
         <section className="products-section">
             <h2 id='featured-title'>Products</h2>
 
+
         <ul className="featured-parent">
             {topSellers.map((item) => {
                 return (
