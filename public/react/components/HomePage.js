@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../stylesheets/homepage.css';
+import { ProductPage } from './Productpage';
 
 export function HomePage(props){
     return (
@@ -49,6 +50,7 @@ export function HomePage(props){
                 <button className="shopall-button">All Items</button>
             </Link>
         </section>
+        <ProductPage/>
     </div>
     )
 }
