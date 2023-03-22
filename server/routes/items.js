@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const { Item } = require("../models");
 
-// GET /item
+// GET /items
 router.get("/", async (req, res, next) => {
   try {
     const items = await Item.findAll();
@@ -12,7 +12,7 @@ router.get("/", async (req, res, next) => {
   }
 });
 
-// GET /item/:id
+// GET /items/:id
 router.get("/:id", async (req, res, next) => {
   try {
     const item = await Item.findByPk(req.params.id);
@@ -22,7 +22,7 @@ router.get("/:id", async (req, res, next) => {
   }
 });
 
-//POST /item/
+// POST /items
 router.post("/", async (req, res) => {
   try {
     const item = await Item.create(req.body);
@@ -32,7 +32,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-//PUT /item/:id
+// PUT /items/:id
 router.put("/:id", async (req, res) => {
   try {
     const item = await Item.findByPk(req.params.id);
@@ -43,7 +43,7 @@ router.put("/:id", async (req, res) => {
   }
 })
 
-
+// DELETE /items/:id
 router.delete("/:id", async (req, res) => {
   try {
     const id = req.params.id
