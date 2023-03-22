@@ -4,26 +4,6 @@ import '../stylesheets/homepage.css';
 
 export function HomePage({items}){
     
-    const [results, setResults] = useState([]);
-
-    function featuredProducts() {
-        let n = 3;
-        const shuffled = items.sort(function () {
-          return 0.5 - Math.random();
-        });
-        const selected = shuffled.slice(0, n);
-        setResults(selected)
-        return selected;
-    }
-
-   //stop re rendering infinite times
-    useEffect(() => {
-        featuredProducts();
-    }, [items])
-
-    console.log(results)
-
-
 
     return (
     <div className= "homepage">

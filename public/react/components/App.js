@@ -35,7 +35,7 @@ export const App = () => {
 			<NavBar />
 			<div className='mainContainer'>
 			<Routes>
-				<Route path="/" element={<HomePage  items={items}/>} />
+				<Route path="/" element={<HomePage />} />
 				<Route path="/shopall" element={<ShopAll />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/contact" element={<Contact />} />
