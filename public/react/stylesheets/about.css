@@ -11,13 +11,15 @@
   }
 
   .box {
-    background-color: #444;
-    color: #fff;
+    color: #444;
+    background-color: #fff;
     border-radius: 5px;
     padding: 20px;
     font-size: 150%;
     height: 90%;
     width: 100%;
+    border: 2px solid red;
+
   }
 
   .a {
