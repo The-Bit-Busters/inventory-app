@@ -5,7 +5,6 @@
     grid-gap: 10px;
     grid-template-columns: [col] 25% [col] 25% [col] 25% [col] 25% ;
     grid-template-rows: [row] auto [row] auto [row] ;
-    background-color: #fff;
     color: #444;
     height: 60vh;
     margin-bottom: 1rem;
