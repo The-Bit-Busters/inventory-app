@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Route, Routes, Link  } from "react-router-dom";
+import { Link  } from "react-router-dom";
 import "../stylesheets/homepage.css";
-import { ProductPage } from "./ProductPage";
 
 export function HomePage({ items }) {
   const [featured, setFeatured] = useState([]);
@@ -38,6 +37,9 @@ export function HomePage({ items }) {
     const productData = await response.json();
     setProduct(productData);
     }
+
+
+
     return (
     <div className= "homepage">
         <section className="greeting">

@@ -1,6 +1,9 @@
 .productPage {
     height: 60vh;
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .containerLeft {
     display: flex;
@@ -22,7 +25,7 @@
     border: 1px solid red;
     font-size: 1.5em;
 }
-.product {
+.singularProduct {
     display: flex;
     width: auto;
     justify-content: space-evenly;

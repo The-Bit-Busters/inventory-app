@@ -8,14 +8,14 @@ export function ProductPage({items}) {
         if(items[i].id == id){
             return(
                 <div className = "productPage"  >
-                    <section className = "product">
+                    <section className = "singularProduct">
                         <div className='containerLeft'>
                             <img src={items[i].image} className="specificProductImg" alt={items[i].title} />
                             <button className = "productButton">
                                 Update Item
                             </button>
                         </div>
-                        <div className = "product description">
+                        <div className = "productDescription">
                             <h1 className = "productTitle">{items[i].title}</h1>
                             <h2 className = "productPrice">${items[i].price}</h2>
                             <div className ="productSpecs" >
