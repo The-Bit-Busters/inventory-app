@@ -2,7 +2,8 @@
   "name": "inventoryapp",
   "version": "1.2.0",
   "scripts": {
-    "test": "jest",
+    "test": "jest --watch-all --verbose",
+    "test:coverage": "jest --verbose --collect-coverage",
     "client-dev": "parcel public/index.html --open",
     "server-dev": "nodemon server.js",
     "seed": "node server/seed.js",
@@ -11,6 +12,7 @@
   "dependencies": {
     "@babel/preset-env": "^7.15.0",
     "@babel/preset-react": "^7.14.5",
+    "babel-jest": "^29.5.0",
     "bootstrap": "^5.2.3",
     "cors": "^2.8.5",
     "dotenv": "16.0.0",
@@ -25,11 +27,14 @@
     "react-router-dom": "^6.9.0",
     "react-test-renderer": "^18.2.0",
     "sequelize": "^6.23.2",
-    "sqlite3": "^5.1.1"
+    "sqlite3": "^5.1.1",
+    "supertest": "^6.3.3"
   },
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.21.0",
+    "@babel/runtime": "^7.21.0",
     "@testing-library/react": "^12.0.0",
-    "babel-jest": "^27.1.0",
-    "jest": "^27.1.0"
+    "jest": "^27.5.1",
+    "regenerator-runtime": "^0.13.11"
   }
 }
