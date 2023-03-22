@@ -18,7 +18,7 @@ export const App = () => {
 		try {
 			const response = await fetch(`${apiURL}/items`);
 			const itemsData = await response.json();
-			
+			// console.log(itemsData);
 			setItems(itemsData);
 		} catch (err) {
 			console.log("Oh no an error! ", err)
@@ -34,7 +34,7 @@ export const App = () => {
 			<NavBar />
 			<div className='mainContainer'>
 			<Routes>
-				<Route path="/" element={<HomePage />} />
+				<Route path="/" element={<HomePage items={items}/>} />
 				<Route path="/shopall" element={<ShopAll />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/contact" element={<Contact />} />
