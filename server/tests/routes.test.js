@@ -3,6 +3,7 @@ const app = require("../app");
 const request = require("supertest");
 import { sequelize } from "../db";
 import "regenerator-runtime/runtime";
+const { validationResult } = require("express-validator");
 
 describe("Item model", () => {
   beforeAll(async () => {
@@ -83,15 +84,20 @@ describe("Item model", () => {
     expect(item.image).toBe("test.jpg");
   });
 
-  // it("should not create an item with a missing required field", async () => {
-  //   await expect(
-  //     Item.create({
-  //       price: 10,
-  //       description: "This is a test item",
-  //       category: "Test category",
-  //       image: "test.jpg",
-  //     })
-  //   ).rejects.toThrow(Sequelize.ValidationError);
+  // test("should not create an item with a missing required field", async () => {
+  //   const item = {
+  //     title: "",
+  //     price: 10,
+  //     description: "This is a test item",
+  //     category: "Test category",
+  //     image: "test.jpg",
+  //   };
+  
+  //   const errors = validationResult({ body: item });
+  
+  //   expect(errors.isEmpty()).toBe(false);
+  
+  //   await expect(Item.create(item)).rejects.toThrow();
   // });
 
   test("should update an item", async () => {
