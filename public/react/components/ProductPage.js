@@ -1,6 +1,6 @@
 import React from 'react'
 import '../stylesheets/productpage.css'
-import { useParams, useState } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
 export function ProductPage({items, addToCart}) {
 
@@ -27,7 +27,9 @@ export function ProductPage({items, addToCart}) {
                                 <button 
                                     onClick={() => addToCart(items[i].id)}
                                 className = "addToCartBtn buttons">Add to Cart</button>
-                                <button className = "addToCartBtn buttons">View Cart</button>
+                                <Link to="/cart">
+                                    <button className = "addToCartBtn buttons">View Cart</button>
+                                </Link>
                             </div>
                         </div>
                     </section>

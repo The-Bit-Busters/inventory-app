@@ -14,6 +14,7 @@ const Cart = ({ cart }) => {
       total += item.price;
       total+= item.price * 0.13;
     });
+    total = (Math.round(total * 100) / 100).toFixed(2);
     setTotal(total);
   }, [cart]);
 
@@ -23,6 +24,7 @@ const Cart = ({ cart }) => {
     cart.forEach((item) => {
       sum += item.price;
     });
+    sum = (Math.round(sum * 100) / 100).toFixed(2);
     setSubTotal(sum);
   }, [cart]);
 
@@ -31,6 +33,7 @@ const Cart = ({ cart }) => {
     cart.forEach((item) => {
       tax += item.price * 0.13;
     });
+    tax = (Math.round(tax * 100) / 100).toFixed(2);
     setTax(tax);
   }, [cart]);
   
