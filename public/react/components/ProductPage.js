@@ -77,7 +77,7 @@ export function ProductPage({ items, addToCart }) {
                   Update Item
                 </button>
                 <button className="productButton">Delete Item</button>
-                <button className="productButton" onClick={() => navigate("/")}>
+                <button className="productButton" onClick={() => navigate("/shopall")}>
                   Go Back
                 </button>
               </div>
