@@ -76,7 +76,7 @@ const Cart = ({ cart, setCart }) => {
                     <td>{item.title}</td>
                     <td>${item.price}</td>
                     <td>
-                      1 <button 
+                      1 <button className="deleteBtn"
                       onClick={() => deleteItem(item.id)}
                       >Delete</button>{" "}
                     </td>
