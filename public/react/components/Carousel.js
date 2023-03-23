@@ -10,7 +10,6 @@ const Carousel = (props) => {
 
   const [touchPosition, setTouchPosition] = useState(null);
 
-
   useEffect(() => {
     setLength(items.length);
   }, [items]);
@@ -72,10 +71,13 @@ const Carousel = (props) => {
           >
             {items.map((item) => {
               return (
-                <img 
-                style={{ objectFit: 'cover', width: '100%', height: '100%' }}
-                src={item.image} key={item.id}/>
-            )})}
+                <img
+                  style={{ objectFit: "cover", width: "100%", height: "100%" }}
+                  src={item.image}
+                  key={item.id}
+                />
+              );
+            })}
           </div>
         </div>
         {currentIndex < length - 1 && (
