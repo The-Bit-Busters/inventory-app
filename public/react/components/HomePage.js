@@ -42,7 +42,7 @@ export function HomePage({ items }) {
             return (
               <li className="product" key={item.id}>
                 <img className="randomizedImgs" src={item.image} alt={item.title} />
-                <h3 className="productName">{item.title.substring(0, 20)}</h3>
+                <h3 className="productName">{item.title.substring(0, 20)}...</h3>
               </li>
             );
           })}

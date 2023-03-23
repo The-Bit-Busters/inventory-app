@@ -1,149 +1,298 @@
 module.exports = {
-  sauces: [
-    {"name" : "Sriracha", "image" : "https://64.media.tumblr.com/12cd128183713bf928bda87a24f22487/tumblr_ne6jee85PM1tha1vgo1_250.gif"},
-    {"name" : "Franks", "image": "https://cdn.streamelements.com/uploads/1887a0da-3642-4795-b5f5-774d5b377e52.gif"},
-    {"name" : "Tobasco", "image": "https://64.media.tumblr.com/1564fcf74adc3fe6542c34b6a1f05de1/tumblr_na9lew0bNS1tha1vgo1_r1_250.gif"}
-  ],
   items: [
     {
-       "title":"Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-       "price":109.95,
-       "description":"Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-       "category":"men's clothing",
-       "image":"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+       "title":`Nike Blazer Mid ‘77 Vintage`,
+       "price":105,
+       "description":`In the ‘70s, Nike was the new shoe on the block. So new in fact, we were still breaking into the basketball scene and testing prototypes on the feet of our local team. Of course, the design improved over the years, but the name stuck. The Nike Blazer Mid ’77 Vintage—classic since the beginning.`,
+       "category":"shoes",
+       "image":"https://i.pinimg.com/474x/7b/40/f0/7b40f05f83d755f1513ee5d6de63e555.jpg"
     },
     {
-       "title":"Mens Casual Premium Slim Fit T-Shirts ",
-       "price":22.3,
-       "description":"Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-       "category":"men's clothing",
-       "image":"https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+       "title":"New Balance 550 Aime Leon Dore White Green",
+       "price":130,
+       "description":"The shoe draws inspiration from the New Balance 550 and remains faithful to its predecessor by featuring a perforated leather upper and breathable mesh. This low-top basketball silhouette comes with a white upper paired with a green, cracked New Balance logo. The shoe sits on a pre-yellowed midsole, providing a vintage look.",
+       "category":"shoes",
+       "image":"https://i.pinimg.com/564x/49/a1/b4/49a1b408a6d5126184f2f2bbd7bcb710.jpg"
     },
     {
-       "title":"Mens Cotton Jacket",
-       "price":55.99,
-       "description":"great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
-       "category":"men's clothing",
-       "image":"https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg"
+       "title":"HOMME PLISSÉ ISSEY MIYAKE JF150 PLEATED TROUSER",
+       "price":299,
+       "description":`Issey Miyake’s pleats first took the fashion world by storm back in ’88, and now they’re back as part of his contemporary Homme Plissé collection. Made using the designer’s iconic plissé fabric, these black trousers elevate your smart looks to stylish new heights.`,
+       "category": "mens",
+       "image":"https://i.pinimg.com/564x/9b/c3/29/9bc329774e295119708ae5799742c348.jpg"
     },
     {
-       "title":"Mens Casual Slim Fit",
-       "price":15.99,
-       "description":"The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
-       "category":"men's clothing",
-       "image":"https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg"
+       "title":"The Alpaca Crew",
+       "price":110,
+       "description":"With a cool rib pattern and a crew neckline, the Alpaca Crew has all the warmth of a cozy winter knit with a plush, airy feel. Alpacas are lighter on the planet with their soft hooves and gentle grazing—making them easier on pastures than other herd animals. Our airy alpaca yarn is prickle-free, long-lasting, and pilling-resistant.",
+       "category":"womens",
+       "image":"https://i.pinimg.com/736x/ee/31/cc/ee31ccf3ccb9020214edf558901fdd0e.jpg"
     },
     {
-       "title":"John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
-       "price":695,
-       "description":"From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
-       "category":"jewelery",
-       "image":"https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg"
+       "title":"Nike Mens Dunk Low Panda Shoes",
+       "price":200,
+       "description":"Your streetwear style isn't complete without the classic Nike Dunk Low Black & White PandaShoes. Nike updates their classic dunk lowsilhouette with black and white colors that pop with every look. They feature an all-leather upper with a white base and the iconic signature Swoosh at the sides.",
+       "category":"shoes",
+       "image":"https://i.pinimg.com/564x/f6/d7/d7/f6d7d79e7f124d7522f6a399fa2b49b6.jpg"
     },
     {
-       "title":"Solid Gold Petite Micropave ",
-       "price":168,
-       "description":"Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
-       "category":"jewelery",
-       "image":"https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+       "title":"Play Commes des Garçons",
+       "price":98,
+       "description":"The concept of the Comme des Garcons PLAY line is design by not designing. Characterized by the iconic red heart logo designed by artist Filip Pagowski, the line is a collection of unisex basics, fragrances, and footwear for those whoenjoy simplicity.",
+       "category":"mens",
+       "image":"https://i.pinimg.com/736x/14/03/7e/14037ee91e3c598bebed9a68b2506629.jpg"
     },
     {
-       "title":"White Gold Plated Princess",
-       "price":9.99,
-       "description":"Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
-       "category":"jewelery",
-       "image":"https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg"
+       "title":"Palm Angels Women's Logo",
+       "price":196,
+       "description":"Palm Angels is a ready-to-wear label for men and women that was born from an art book by Moncler art director Francesco Ragazzi. The collection fuses LA streetwear with Italian glamour for a futuristic urban chic. Read more about Palm Angels.",
+       "category":"womens",
+       "image":"https://i.pinimg.com/736x/43/68/9d/43689d32c74b7402d78ad0d823e92528.jpg"
     },
     {
-       "title":"Pierced Owl Rose Gold Plated Stainless Steel Double",
-       "price":10.99,
-       "description":"Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
-       "category":"jewelery",
-       "image":"https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg"
+       "title":"Oversized Boyfriend Sweatpants",
+       "price":88,
+       "description":"Crafted from a soft cotton blend and featuring an extra-slouchy cut, these MWL by Madewell sweatpants are a pair you'll want to live in all weekend long. Keep your look coordinated by matching them with the label's polo sweatshirt.",
+       "category":"womens",
+       "image":"https://i.pinimg.com/564x/b5/86/62/b58662dd86a0a8414c44eae1a3545690.jpg"
     },
     {
-       "title":"WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
-       "price":64,
-       "description":"USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system",
-       "category":"electronics",
-       "image":"https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg"
+       "title":"Archilles Leather Sneakers",
+       "price":410,
+       "description":"Common Projects' 'Original Achilles' sneakers have gained cult status thanks to their minimalist design and superior construction. This white version is perfect for creating crisp city-smart looks. Wear this pair with rolled-up selvedge denim jeans and a lightweight knit for effortlessly understated flair.",
+       "category":"shoes",
+       "image":"https://i.pinimg.com/736x/7d/a8/80/7da880b30e98d4f92237c89147187466.jpg"
     },
     {
-       "title":"SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
-       "price":109,
-       "description":"Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications and internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, making it ideal for typical PC workloads The perfect balance of performance and reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; Performance may vary depending upon drive capacity, host device, OS and application.)",
-       "category":"electronics",
-       "image":"https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg"
+       "title":"Fear Of God Essentials Hoodie",
+       "price":200,
+       "description":"A contemporary classic, Fear of God ESSENTIALS’ grey Light Oatmeal hoodie will complement virtually every casual look. Crafted from soft cotton-blend jersey, it bears the cult brand’s logo to the front, reverse and hood.",
+       "category":"mens",
+       "image":"https://i.pinimg.com/736x/ac/8c/a5/ac8ca5d239a2b3304338283e530ce4f2.jpg"
     },
     {
-       "title":"Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
-       "price":109,
-       "description":"3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking & Correction) to provide the optimized performance and enhanced reliability.",
-       "category":"electronics",
-       "image":"https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg"
+       "title":"Kith Box Logo Casual T-shirt",
+       "price":68,
+       "description":"Kith presents the core collection, featuring enduring styles for complete wardrobing in our signature fabrications and color palette.",
+       "category":"mens",
+       "image":"https://i.pinimg.com/736x/9a/26/da/9a26da3e6ff555f97fa82ddf04a5d5c0.jpg"
     },
     {
-       "title":"WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
-       "price":114,
-       "description":"Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
-       "category":"electronics",
-       "image":"https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg"
+       "title":"Kith Sweatpants",
+       "price":98,
+       "description":"Featuring a palette rooted in washed indigo, mushroom and earth tone neutrals, putty whites, dusty mint and cool toned cacao.",
+       "category":"womens",
+       "image":"https://i.pinimg.com/564x/3b/23/90/3b239050a417ea1ef3410c12091dcc74.jpg"
     },
     {
-       "title":"Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
-       "price":599,
-       "description":"21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz",
-       "category":"electronics",
-       "image":"https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg"
+       "title":"Nike Big Swoosh Reversible Jacket",
+       "price":85,
+       "description":"This Nike Big Swoosh Reversible Boa Jacket Asia Sizing Black White comes with a series of features including a fleece material embedded to retain warmth. It contains a large Nike logo across the entire body with a different color from the rest of the jacket.",
+       "category":"mens",
+       "image":"https://i.pinimg.com/736x/91/9b/0a/919b0a468567a164e6d1159e04e3835e.jpg"
     },
     {
-       "title":"Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
-       "price":999.99,
-       "description":"49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
-       "category":"electronics",
-       "image":"https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg"
+       "title":"Vintage Stussy Crewneck",
+       "price":96,
+       "description":"Vintage shirt in a size medium.",
+       "category":"womens",
+       "image":"https://i.pinimg.com/564x/fd/b4/78/fdb478a9b8fe220c0e6bdfe6b4674740.jpg"
     },
     {
-       "title":"BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
-       "price":56.99,
-       "description":"Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Lightweigt and Warm.Stand Collar Liner jacket, keep you warm in cold weather. Zippered Pockets: 2 Zippered Hand Pockets, 2 Zippered Pockets on Chest (enough to keep cards or keys)and 1 Hidden Pocket Inside.Zippered Hand Pockets and Hidden Pocket keep your things secure. Humanized Design: Adjustable and Detachable Hood and Adjustable cuff to prevent the wind and water,for a comfortable fit. 3 in 1 Detachable Design provide more convenience, you can separate the coat and inner as needed, or wear it together. It is suitable for different season and help you adapt to different climates",
-       "category":"women's clothing",
-       "image":"https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg"
+       "title":"High-Waisted Carpenter Pants",
+       "price":79,
+       "description":"BDG Jack High-Waisted Carpenter Pants in olive.",
+       "category":"womens",
+       "image":"https://i.pinimg.com/564x/08/4a/fd/084afd2f91ebfee1877b2b3944e71f0a.jpg"
     },
     {
-       "title":"Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
-       "price":29.95,
-       "description":"100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
-       "category":"women's clothing",
-       "image":"https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg"
+       "title":"Womens Skate Jeans",
+       "price":69,
+       "description":"BDG Urban Outfitters Womens Skate Jeans. Utility-look jeans from BDG with a baggy fit through the straight leg silhouette.",
+       "category":"womens",
+       "image":"https://i.pinimg.com/736x/f2/5b/d3/f25bd364c8413aa986409a3e24a8ca2c.jpg"
     },
     {
-       "title":"Rain Jacket Women Windbreaker Striped Climbing Raincoats",
-       "price":39.99,
-       "description":"Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat, fully stripes Lined and The Raincoat has 2 side pockets are a good size to hold all kinds of things, it covers the hips, and the hood is generous but doesn't overdo it.Attached Cotton Lined Hood with Adjustable Drawstrings give it a real styled look.",
-       "category":"women's clothing",
-       "image":"https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg"
+       "title":"Aritzia Cozy Fleece Boyfriend Boxy Zip Hoodie",
+       "price":80,
+       "description":`This is a boxy zip-up hoodie with dropped shoulders and a double-layer hood. It's made with Tna's Cozy Fleece — premium, midweight fleece famous for its soft-brushed back, sueded face and cloud-nine cozy feel. The world's best. It's been recently redesigned for an even better look and feel.`,
+       "category": "womens",
+       "image":"https://aritzia.scene7.com/is/image/Aritzia/s23_03_a03_102324_23405_off_a?wid=1800"
     },
     {
-       "title":"MBJ Women's Solid Short Sleeve Boat Neck V ",
-       "price":9.85,
-       "description":"95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort, Ribbed on sleeves and neckline / Double stitching on bottom hem",
-       "category":"women's clothing",
-       "image":"https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg"
+       "title":"The Linen Standard Fit",
+       "price":88,
+       "description":"Linen is naturally breathable, durable, and cool to the touch. Even better—it looks better un-ironed.",
+       "category":"mens",
+       "image":"https://media.everlane.com/image/upload/c_fill,w_2048,ar_1:1,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/3185ddae_e479"
     },
     {
-       "title":"Opna Women's Short Sleeve Moisture",
-       "price":7.95,
-       "description":"100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort",
-       "category":"women's clothing",
-       "image":"https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg"
+       "title":"The Grade-A Cashmere Crew",
+       "price":170,
+       "description":"This timeless style gets a luxe upgrade with the soft and lightweight warmth of cashmere. All cashmere fibers are hollow and made to trap warmth—like a polar bear's fur. Not all cashmere is equal, however.",
+       "category":"mens",
+       "image":"https://media.everlane.com/image/upload/c_fill,dpr_2,f_auto,g_face:center,q_auto,w_auto/v1/i/0ae2262e_2e86.jpg"
     },
     {
-       "title":"DANVOUY Womens T Shirt Casual Cotton Short",
-       "price":12.99,
-       "description":"95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
-       "category":"women's clothing",
-       "image":"https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg"
-    }
+       "title":"Cutout Knit Mini Dress",
+       "price":88,
+       "description":`This is a sweater dress with a waist cut-out and fully fashioned construction. It’s made with Wonder Yarn — the lightweight yarn that lives up to its name. This peachy-soft yarn offers the all-season warmth of wool, without the wool.`,
+       "category":"womens",
+       "image":"https://aritzia.scene7.com/is/image/Aritzia/s23_04_a08_104559_29660_off_a?wid=1800"
+    },
+    {
+      "title": "Leather Midi Skirt",
+      "price": 400,
+      "description": "A capsule of refined garments, made with quality materials to create a feminine and contemporary closet for special occasions.",
+      "category": "womens",
+      "image": "https://st.mngbcn.com/rcs/pics/static/T4/fotos/S20/47034038_99_B.jpg?ts=1674057809729&imwidth=378&imdensity=2"
+    },
+    {
+      "title": "Nike Air Max",
+      "price": 190,
+      "description": "Push your style full speed ahead with the Air Max 97. Its iconic design takes inspiration from water droplets and Japanese bullet trains. Full-length Nike Air cushioning lets you ride in performance comfort. Lace up and ride first class.",
+      "category": "shoes",
+      "image": "https://i.pinimg.com/736x/a0/94/60/a09460dbcb41c8c8782ae978ce80caa1.jpg"
+    },
+    {
+      "title": "Zara Leather Bomber Jacket",
+      "price": 259,
+      "description": "Leather jacket. High collar and long sleeves. Welt pockets at hip and interior pocket. Rib trim. Front zip closure.",
+      "category": "mens",
+      "image": "https://static.zara.net/photos///2023/V/0/2/p/4720/411/800/2/w/1500/4720411800_6_1_1.jpg?ts=1678798491909"
+    },
+    {
+      "title": "Denim Jacket",
+      "price": 69,
+      "description": "Jacket made with cotton denim fabric. Tonal faux leather lapel collar. Long sleeves with buttoned cuffs. Side pockets at hip. Washed effect. Cropped length. Front zip closure.",
+      "category": "mens",
+      "image": "https://static.zara.net/photos///2023/V/0/2/p/1538/424/800/2/w/1500/1538424800_6_1_1.jpg?ts=1678113043656"
+    },
+    {
+      "title": "Contrast Print Sweater",
+      "price": 49,
+      "description": "Round neck sweatshirt with long sleeves. All-over contrasting print details.",
+      "category": "mens",
+      "image": "https://static.zara.net/photos///2023/V/0/2/p/0722/415/710/2/w/1500/0722415710_6_1_1.jpg?ts=1678723042341"
+    },
+    {
+      "title": "Zippered Knit Polo",
+      "price": 45,
+      "description": "Knit cotton polo shirt. Lapel collar with front zip closure. Short sleeves. Rib trim.",
+      "category": "mens",
+      "image": "https://static.zara.net/photos///2023/V/0/2/p/3284/456/251/2/w/1500/3284456251_6_1_1.jpg?ts=1678725413607"
+    },
+    {
+      "title": "Slim Fit Suit Jacket",
+      "price": 129,
+      "description": "Blazer with notched lapel collar. Long sleeves with buttoned cuffs. Welt pocket at chest and flap pockets at hip. Interior pocket. Back vents. Front button closure.",
+      "category": "mens",
+      "image": "https://static.zara.net/photos///2022/I/0/1/p/1564/610/800/2/w/1500/1564610800_6_1_1.jpg?ts=1665394197586"
+    },
+    {
+      "title": "Belted Wool Blend Jacket",
+      "price": 229,
+      "description": "Long coat made of wool blend fabric. Lapel collar and long sleeves with buttoned straps. Tied self belt. Front pockets. Tonal lined interior. Side slits at hem.",
+      "category": "womens",
+      "image": "https://static.zara.net/photos///2022/I/0/1/p/8464/724/704/2/w/1500/8464724704_6_1_1.jpg?ts=1668012468764"
+    },
+    {
+      "title": "Text T-Shirt",
+      "price": 11,
+      "description": "Round neck top with short sleeves. Front contrasting text.",
+      "category": "womens",
+      "image": "https://static.zara.net/photos///2023/V/0/1/p/5643/320/400/2/w/1500/5643320400_6_1_1.jpg?ts=1678985973774"
+    },
+    {
+      "title": "Parachute Pants",
+      "price": 89,
+      "description": "100% cotton fabric. Flowy fabric. Cargo design. Long design. Medium waist. Adjustable waist with inner elastic. Concealed zip and button fastening. Two side pockets. Two patch pockets on the back. Hem with elastic band.",
+      "category": "womens",
+      "image": "https://st.mngbcn.com/rcs/pics/static/T4/fotos/S20/47025880_40_B.jpg?ts=1675173805439&imwidth=378&imdensity=2&impolicy=featured"
+    },
+    {
+      "title": "Braided Turtleneck Sweater",
+      "price": 69,
+      "description": "Fabric with wool. Medium knit. Braided design. Turtleneck. Long sleeve. Cable knit finish.",
+      "category": "mens",
+      "image": "https://st.mngbcn.com/rcs/pics/static/T4/fotos/S20/47000792_91_B.jpg?ts=1663312538517&imwidth=282&imdensity=2"
+    },
+    {
+      "title": "Relaxed Sweat Shorts",
+      "price": 70,
+      "description": "Heavyweight fleece fabric, elasticated waistband with drawcord, two side pockets, essentials rubberized logo on front, Essentials Fear of God printed logo on left leg, this style is designed for a relaxed fit",
+      "category": "mens",
+      "image": "https://cdn.shopify.com/s/files/1/0094/2252/products/E160SU224107F-front-3_1512x.jpg?v=1671820589"
+    },
+    {
+      "title": "Nike Air Force 1",
+      "price": 100,
+      "description": "The radiance lives on in the Nike Air Force 1 ’07, the b-ball OG that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.",
+      "category": "shoes",
+      "image": "https://i.pinimg.com/474x/c5/cd/5a/c5cd5a316e57db3a05bab7ea8f032c78.jpg"
+    },
+    {
+      "title": "Jordan 1 Retro University Blue",
+      "price": 410,
+      "description": "Features white and black tumbled leather upper with University Blue Durabuck overlays. Nike Air woven label on the tongue and an Air Jordan Wings Logo is printed on the ankle.",
+      "category": "shoes",
+      "image": "https://i.pinimg.com/736x/c5/4f/79/c54f790e581fe98b49d538566e8f5136.jpg"
+    },
+    {
+      "title": "Crocs Lightning McQueen",
+      "price": 165,
+      "description": `Vroom-vroom! Lightning McQueen returns with a whole new set of lights race fans will go crazy for. Now available in adult sizes, the new McQueen Clog features cool Cars graphics and long-lasting LEDs that light up with every step. They’re sure to leave the competition in the dust and win new fans everywhere you choose to rev.`,
+      "category": "shoes",
+      "image": "https://i.pinimg.com/474x/4b/a3/76/4ba3763c4287e2e927c72f5cf8fa1d64.jpg"
+    },
+    {
+      "title": "Salomon Speedcross 3 Trail Running Shoes",
+      "price": 130,
+      "description": "With a clean appearance and a touch of accents, this slip-on sneaker is durable and elegant.",
+      "category": "shoes",
+      "image": "https://i.pinimg.com/564x/7f/43/72/7f43720412aeb1caa4c41a1cba3a8815.jpg"
+    },
+    {
+      "title": "Salomon XT-6",
+      "price": 200,
+      "description": "The outsole features a specific lug design and pattern for improved grip across all surfaces. Salomon's 4D Advanced Chassis helps guide your feet through rough terrain, reducing fatigue on those long days that feel never ending.",
+      "category": "shoes",
+      "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1674143118-salomon-xt-6-white-lunar-rock-1674143110.jpg?crop=1xw:1xh;center,top&resize=980:*"
+    },
+    {
+      "title": "Hoka Project Clifton",
+      "price": 250,
+      "description": "A futuristic riff on the classic Clifton, this souped-up spinoff pairs the Clifton 8’s cushy bottom unit with an edgy upper that enlists a quick-lace system and Aquaguard® Zip. Delivering the same cushioned ride experience as the original icon, this street-inspired style makes a statement with raised detailing over ripstop mesh.",
+      "category": "shoes",
+      "image": "https://dms.deckers.com/hoka/image/upload/f_auto,q_auto,dpr_auto/b_rgb:f7f7f9/w_966/v1666304180/1127924-BBLC_1.png?_s=RAABAB0"
+    },
+    {
+      "title": "Raf Simons Cylon-21",
+      "price": 534,
+      "description": "cream white/black, calf leather, colour-block panelled design, logo-print tongue, embossed logo to the side, transparent panel detail, front lace-up fastening, branded footbed, round toe, flat rubber sole",
+      "category": "shoes",
+      "image": "https://cdn-images.farfetch-contents.com/19/06/69/85/19066985_41653637_1000.jpg"
+    },
+    {
+      "title": "Birkenstock London Suede",
+      "price": 170,
+      "description": "London Suede silhouette, suede upper, strap with adjustable buckle closure, debossed Birkenstock branding on buckle closure and side panel, EVA midsole, rubber outsole",
+      "category": "shoes",
+      "image": "https://cdn.shopify.com/s/files/1/0094/2252/products/BR1010503BirkenstockLondonTaupeSuede_1449_1728x.jpg?v=1676456611"
+    },
+    {
+      "title": `Timberland 6" Rubber Toe`,
+      "price": 240,
+      "description": `6" Rubber Toe silhouette, Nubuck upper, rubberized foxing and toe wrap, leather collar, metal hardware, rope laces, leather footbed, rubber sole unit`,
+      "category": "shoes",
+      "image": "https://cdn.shopify.com/s/files/1/0094/2252/products/TB0A5ZPF001TimberlandxBeeLine6RubberToeBlack_22960_1728x.jpg?v=1666642245"
+    },
+    {
+      "title": "New Balance 550 Aime Leon Dore Natural Green",
+      "price": 130,
+      "description": `The New Balance 550 Aime Leon Dore Natural Green features smooth white leather uppers. Natural Green leather overlays are on the collar, heel, and inner lining. A pilled, yellow leather "N" logo is embossed on each side of the sneaker. Bringing it all together is a off-white, Natural Green, and yellow outsole.`,
+      "category": "shoes",
+      "image": "https://cdn-images.farfetch-contents.com/16/81/96/45/16819645_35804511_1000.jpg"
+    },
  ]
 };
