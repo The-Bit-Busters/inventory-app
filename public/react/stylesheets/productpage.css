@@ -26,9 +26,9 @@
     font-size: 1.5em;
 }
 .singularProduct {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: auto;
-    justify-content: space-evenly;
 }
 .description {
     display: flex;
