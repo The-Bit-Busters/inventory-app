@@ -56,6 +56,7 @@ export function HomePage({ items }) {
       </section>
 
       <h2 id="featured-title">Featured Products</h2>
+
       <section className="features-section">
         {featured.map((item) => {
           return (
@@ -75,7 +76,7 @@ export function HomePage({ items }) {
           );
         })}
       </section>
-      <h2 id="featured-title">Top Sellers</h2>
+      <h2 id="featured-title">TOP SELLERS</h2>
       <section className="features-section">
         {topSellers.map((item) => {
           return (
