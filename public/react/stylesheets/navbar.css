@@ -18,6 +18,8 @@ nav {
   display: flex;
   justify-content: center;
   gap: 2rem;
+}
+ul {
   margin-bottom: 0;
 }
 
@@ -40,6 +42,7 @@ li {
 }
 .nav-menu {
   display: flex;
+  align-items: center;
 }
 .nav-menu li {
   padding: 0 1rem;
