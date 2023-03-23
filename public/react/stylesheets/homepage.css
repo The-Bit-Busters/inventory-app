@@ -1,7 +1,7 @@
 #home-title {
   font-size: 2.5em;
   font-weight: 300;
-  margin-bottom: 0.5em;
+  margin-bottom: 2em;
   text-align: center;
 }
 .greeting {
@@ -18,7 +18,7 @@
 }
 
 .features-section {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   max-width: 1140px;
   margin: auto;
   display: grid;
@@ -50,7 +50,7 @@
 .shopall-button {
   margin-top: 2em;
   margin-bottom: 2em;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   font-size: 1.5em;
 }
 .randomizedImgs {
@@ -67,10 +67,14 @@
   background-color: white;
   border: 1px solid black;
 }
+
+.productName,
+.randomizedImgs {
+  background-color: rgb(247, 247, 247)
+}
 /* create a hover effect for the product name with pointer */
 .productName:hover,
 .randomizedImgs:hover {
-  background-color: #f5f5f5;
   cursor: pointer;
 }
 

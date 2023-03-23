@@ -14,3 +14,14 @@ body {
   background-color: gray;
   
 }
+button:hover{
+  background-color: rgb(255, 255, 255, 0.2);
+  color: white;
+  transition: 0.3s;
+}
+
+a:hover {
+  background-color: rgb(255, 255, 255, 0.2);
+  color: white;
+  transition: 0.3s;
+}
