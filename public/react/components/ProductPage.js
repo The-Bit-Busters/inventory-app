@@ -1,8 +1,10 @@
 import React from 'react'
 import '../stylesheets/productpage.css'
-import { useParams } from 'react-router-dom';
+import { useParams, useState } from 'react-router-dom';
 
-export function ProductPage({items}) {
+export function ProductPage({items, addToCart}) {
+
+
     const { id } = useParams();
     for(let i = 0; i < items.length; i++){
         if(items[i].id == id){
@@ -22,7 +24,9 @@ export function ProductPage({items}) {
                                 <p> <span>Product Description :</span>lorem ipsum blah asdbasud uahsdu </p>
                             </div>
                             <div className = "CartButtons">
-                                <button className = "buttons">Add to Cart</button>
+                                <button 
+                                    onClick={() => addToCart(items[i].id)}
+                                className = "buttons">Add to Cart</button>
                                 <button className = "buttons">View Cart</button>
                             </div>
                         </div>

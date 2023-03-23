@@ -14,22 +14,38 @@ import Cart from './Cart';
 import { ProductPage } from './ProductPage';
 
 export const App = () => {
-  const [items, setItems] = useState([]);
+	const [items, setItems] = useState([]);
+	const [cart, setCart] = useState([]);
 
-  async function fetchItems() {
-    try {
-      const response = await fetch(`${apiURL}/items`);
-      const itemsData = await response.json();
-    //   console.log(itemsData);
-      setItems(itemsData);
-    } catch (err) {
-      console.log("Oh no an error! ", err);
-    }
-  }
+	async function fetchItems() {
+		try {
+		const response = await fetch(`${apiURL}/items`);
+		const itemsData = await response.json();
+		console.log(itemsData);
+		setItems(itemsData);
+		} catch (err) {
+		console.log("Oh no an error! ", err);
+		}
+	}
+	const addToCart = (id) => {
+		for (let i = 0; i < items.length; i++) {
+		  if (items[i].id === id) {
+			setCart(prevCart => [...prevCart, items[i]]);
+			break;
+		  }}
 
-  useEffect(() => {
-    fetchItems();
-  }, []);
+		console.log('clicked')
+		console.log(cart)
+	};
+	const removeItem = (id) => {
+		const newCart = cart.filter(item => item.id !== id)
+		setCart(newCart)
+	  }
+	  
+
+	useEffect(() => {
+		fetchItems();
+	}, []);
 
 
 	useEffect(() => {
@@ -45,8 +61,8 @@ export const App = () => {
 				<Route path="/shopall" element={<ShopAll items={items}/>} />
 				<Route path="/about" element={<About />} />
 				<Route path="/contact" element={<Contact />} />
-				<Route path="/cart" element={<Cart />} />
-				<Route path="/product/:id" element={<ProductPage items={items}/>} />
+				<Route path="/cart" element={<Cart cart={cart}  />} />
+				<Route path="/product/:id" element={<ProductPage addToCart={addToCart} removeItem={removeItem} items={items}/>} />
 			</Routes>
 			</div>
 			<Footer />

@@ -7,6 +7,7 @@ export function HomePage({ items }) {
   const [topSellers, setTopSellers] = useState([]);
   const [product, setProduct] = useState([]);
 
+
   async function fetchFeaturedProducts() {
     let n = 3;
     const shuffled = items.sort(() => {
