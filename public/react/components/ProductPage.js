@@ -1,12 +1,15 @@
-import React, {useState} from "react";
+
+import React, { useState, useEffect } from "react";
 import "../stylesheets/productpage.css";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import UpdateItemModal from "./UpdateModal";
 import apiURL from "../api";
 
 export function ProductPage({ items, addToCart }) {
   const { id } = useParams();
+  const navigate = useNavigate();
+  
   const itemId = parseInt(id);
   const [showModal, setShowModal] = useState(false);
   const [title, setTitle] = useState("");
@@ -42,6 +45,10 @@ export function ProductPage({ items, addToCart }) {
     }
   };
 
+=======
+  
+
+
   for (let i = 0; i < items.length; i++) {
     if (items[i].id == id) {
       return (
@@ -53,9 +60,14 @@ export function ProductPage({ items, addToCart }) {
                 className="specificProductImg"
                 alt={items[i].title}
               />
+
               <button className="productButton" onClick={handleClick}>
                 Update Item
               </button>
+                <button className="productButton">Delete Item</button>
+                <button className="productButton" onClick={() => navigate("/")}>
+                  Go Back
+                </button>
               {showModal && (
                 <UpdateItemModal setTitle={setTitle} setDescription={setDescription} setPrice={setPrice} handleSubmit={handleSubmit}
                 title={title} description={description} price={price}
