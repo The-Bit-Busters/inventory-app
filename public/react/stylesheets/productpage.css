@@ -128,3 +128,17 @@ button:hover {
 .description-label {
   display: flex;
 }
+
+textarea { 
+  padding: 1px; 
+  border: solid 1px #5c8593; 
+  font-size: 10pt; 
+  color:#42484d; 
+  background-color:#ffffff;
+}
+label input,
+textarea {
+    float: right;
+    clear: both;
+
+}

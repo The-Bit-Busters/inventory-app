@@ -6,7 +6,7 @@ const ShopAll = ({ items }) => {
   const womensItems = items.filter((item) => item.category === "womens");
   const shoesItems = items.filter((item) => item.category === "shoes");
   return (
-    <div>
+    <div className="productsContainer">
       <section className="products-section">
         <h2 id="featured-title">Men's Clothing</h2>
         <Carousel items={mensItems} />
