@@ -1,0 +1,35 @@
+Hey Bit Busters! :) Popping in to give some initial feedback on the codebase!
+
+Readability
+------------------------------------------------------------------------------------------
+[Mostly] New code is syntactic - everything clearly named (files, objects, functions, variables)
+[Yes] Clear, concise comments that describes why code was included rather than what it does
+[Yes] No redundant comments
+
+"What is the purpose of the two useEffects on the main App component?"
+"I would recommend avoiding in-line styling when possible."
+
+Security
+------------------------------------------------------------------------------------------
+[n/a] All secret information is stored securely (environmental variables, github secrets)
+[n/a] User information protected appropriately (encryption, auth)
+
+Stability
+------------------------------------------------------------------------------------------
+[Yes] Errors are handled where necessary (try/catch blocks, console errors, status codes)
+[Yes] Appropriate test coverage and reporting (unit, end-to-end, accessibility)
+
+"You may find it helpful to use the "next" keyword when handling errors in your express routes!"
+
+Architecture
+------------------------------------------------------------------------------------------
+[Yes] Code uses encapsulation and modularization to achieve separation of concerns
+[Yes] File tree is organized and navigable
+
+"Nice work with separating out your different components!"
+
+Reusability
+------------------------------------------------------------------------------------------
+[Yes] Code uses reusable components, functions, and services
+
+"Overall, looking great! Just need to flesh out a bit more of the functionality, but the Bit Busters are well on the way to finishing up with a great inventory app!"
