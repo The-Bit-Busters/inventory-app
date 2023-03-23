@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "../stylesheets/carousel";
 
 const Carousel = (props) => {
@@ -71,11 +72,23 @@ const Carousel = (props) => {
           >
             {items.map((item) => {
               return (
-                <img
-                  style={{ objectFit: "cover", width: "100%", height: "100%" }}
-                  src={item.image}
-                  key={item.id}
-                />
+                <div>
+                  <Link
+                    to={`/product/${item.id}`}
+                    style={{ textDecoration: "none" }}
+                  >
+                    {" "}
+                    <img
+                      style={{
+                        objectFit: "cover",
+                        width: "100%",
+                        height: "100%",
+                      }}
+                      src={item.image}
+                      key={item.id}
+                    />
+                  </Link>
+                </div>
               );
             })}
           </div>
