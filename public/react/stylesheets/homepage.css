@@ -67,10 +67,14 @@
   background-color: white;
   border: 1px solid black;
 }
+
+.productName,
+.randomizedImgs {
+  background-color: rgb(247, 247, 247)
+}
 /* create a hover effect for the product name with pointer */
 .productName:hover,
 .randomizedImgs:hover {
-  background-color: #f5f5f5;
   cursor: pointer;
 }
 
