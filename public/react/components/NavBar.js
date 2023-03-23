@@ -1,9 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
 import "../stylesheets/navbar.css";
 import { Link } from "react-router-dom";
-import { IoIosAddCircleOutline, IoIosSearch } from "react-icons/io";
+import { IoIosSearch } from "react-icons/io";
+import { FaBars, FaTimes } from 'react-icons/fa';
+
 
 const NavBar = () => {
+    const [click, setClick] = useState(false);
+
+
+    const handleClick = () => {
+      setClick(!click);
+      console.log('clicked', click)
+    };
+
   return (
     <div
       style={{
@@ -23,20 +33,36 @@ const NavBar = () => {
             placeholder="Search Products"
           />
         </form>
-        <ul className="navbar-right">
-          <Link to="/" style={{ textDecoration: "none" }}>
-            <li>Home</li>
-          </Link>
-          <Link to="/about" style={{ textDecoration: "none" }}>
-            <li>About</li>
-          </Link>
-          <Link to="/contact" style={{ textDecoration: "none" }}>
-            <li>Contact Us</li>
-          </Link>
-          <Link to="/cart" style={{ textDecoration: "none" }}>
-            <li>Your Cart</li>
-          </Link>
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li>
+               <Link to="/" style={{ textDecoration: "none" }}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" style={{ textDecoration: "none" }}>
+                About 
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" style={{ textDecoration: "none" }}>
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link to="/cart" style={{ textDecoration: "none" }}>
+                Cart
+              </Link>
+            </li>
+          
         </ul>
+        <div className="burger">
+            {click ? (
+                <FaTimes onClick={handleClick} size={22} />
+             ):(
+                <FaBars onClick={handleClick} size={22} />
+            )}
+        </div>
       </nav>
     </div>
   );

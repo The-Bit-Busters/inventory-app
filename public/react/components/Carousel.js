@@ -71,8 +71,11 @@ const Carousel = (props) => {
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
             {items.map((item) => {
-              return <img src={item.image} key={item.id}/>;
-            })}
+              return (
+                <img 
+                style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+                src={item.image} key={item.id}/>
+            )})}
           </div>
         </div>
         {currentIndex < length - 1 && (

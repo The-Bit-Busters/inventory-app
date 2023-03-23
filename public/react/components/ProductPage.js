@@ -1,6 +1,7 @@
 import React from 'react'
 import '../stylesheets/productpage.css'
 import { useParams, Link } from 'react-router-dom';
+import {Button } from "react-bootstrap";
 
 export function ProductPage({items, addToCart}) {
 
@@ -19,16 +20,18 @@ export function ProductPage({items, addToCart}) {
                         </div>
                         <div className = "productDescription">
                             <h1 className = "productTitle">{items[i].title}</h1>
-                            <h2 className = "productPrice">${items[i].price}</h2>
+                            <p className = "productPrice">${items[i].price}</p>
                             <div className ="productSpecs" >
                                 <p> <span>Product Description :</span>lorem ipsum blah asdbasud uahsdu </p>
                             </div>
                             <div className = "cartButtons">
-                                <button 
-                                    onClick={() => addToCart(items[i].id)}
-                                className = "addToCartBtn buttons">Add to Cart</button>
+                                <Button onClick={() => addToCart(items[i].id)} variant="dark" size="md" className="mt-4 w-100 addToCartBtn">
+                                    Add to Cart
+                                </Button>
                                 <Link to="/cart">
-                                    <button className = "addToCartBtn buttons">View Cart</button>
+                                <Button variant="dark" size="md" className="mt-4 w-100">
+                                    View Cart
+                                </Button>
                                 </Link>
                             </div>
                         </div>
