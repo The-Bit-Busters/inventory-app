@@ -5,8 +5,11 @@ import { Button } from "react-bootstrap";
 import UpdateItemModal from "./UpdateModal";
 import apiURL from "../api";
 
+
+
 export function ProductPage({ items, addToCart }) {
   const { id } = useParams();
+
   const navigate = useNavigate();
 
   const itemId = parseInt(id);
@@ -42,6 +45,21 @@ export function ProductPage({ items, addToCart }) {
       console.error("Failed to update item:", response);
     }
   };
+  
+    const handleDelete = () => {
+    fetch('/api/items/id', { method: 'DELETE' })
+      .then(response => {
+        if (response.ok) {
+          console.log('Item successfully deleted');
+        } else {
+          console.error('Could not delete item');
+        }
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  }
+
 
   for (let i = 0; i < items.length; i++) {
     if (items[i].id == id) {
@@ -105,6 +123,9 @@ export function ProductPage({ items, addToCart }) {
                     View Cart
                   </Button>
                 </Link>
+                <button className="mt-4 w-100" onClick={handleDelete}>
+                  Delete Item
+                </button>
               </div>
             </div>
           </section>
