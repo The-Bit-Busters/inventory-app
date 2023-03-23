@@ -41,7 +41,7 @@ export function HomePage({ items }) {
 
   return (
     <div className="homepage">
-      <h2 id="featured-title">Featured Products</h2>
+      <h2 id="featured-title">FEATURED PRODUCTS</h2>
       <section className="features-section">
         {featured.map((item) => {
           return (
@@ -61,7 +61,7 @@ export function HomePage({ items }) {
           );
         })}
       </section>
-      <h2 id="featured-title">Top Sellers</h2>
+      <h2 id="featured-title">TOP SELLERS</h2>
       <section className="features-section">
         {topSellers.map((item) => {
           return (
@@ -83,7 +83,7 @@ export function HomePage({ items }) {
       </section>
       <section className="button-section">
         <Link to="/shopall" style={{ textDecoration: "none" }}>
-          <button className="shopall-button">All Items</button>
+          <button className="shopall-button">ALL ITEMS</button>
         </Link>
       </section>
     </div>
