@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Link  } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../stylesheets/homepage.css";
 
 export function HomePage({ items }) {
   const [featured, setFeatured] = useState([]);
   const [topSellers, setTopSellers] = useState([]);
   const [product, setProduct] = useState([]);
-
 
   async function fetchFeaturedProducts() {
     let n = 3;
@@ -37,47 +36,58 @@ export function HomePage({ items }) {
     const response = await fetch(`${apiURL}/items/${id}`);
     const productData = await response.json();
     setProduct(productData);
-    }
+  }
 
-
-
-    return (
-    <div className= "homepage">
-        <section className="greeting">
-            <h1 id='home-title'>The Bit Buckets Inventory!</h1>
-        </section>
-            <h2 id='featured-title'>Featured Products</h2>
-        <section className="features-section">
-                    {featured.map((item) => {
-                        return (
-                            <li className="product" key={item.id}>
-                                    <Link to={`/product/${item.id}`} style={{ textDecoration: "none" }}>
-                                        <img className="randomizedImgs" src={item.image} alt={item.title} />
-                                        <h3 className="productName">{item.title.substring(0, 20)}</h3>
-                                    </Link>
-                            </li>
-                    );
-                    })}
-        </section>
-            <h2 id='featured-title'>Products</h2>
-        <section className="features-section">
-            {topSellers.map((item) => {
-                return (
-                    <li className="product" key={item.id}>
-                        <Link to={`/product/${item.id}`}  style={{ textDecoration: "none" }}>
-                            <img className="randomizedImgs" src={item.image} alt={item.title} />
-                            <h3 className="productName">{item.title.substring(0, 20)}</h3>
-                        </Link> 
-                    </li>
-                );
-            })}
+  return (
+    <div className="homepage">
+      <section className="greeting">
+        <h1 id="home-title">The Bit Buckets Inventory!</h1>
+      </section>
+      <h2 id="featured-title">Featured Products</h2>
+      <section className="features-section">
+        {featured.map((item) => {
+          return (
+            <li className="product" key={item.id}>
+              <Link
+                to={`/product/${item.id}`}
+                style={{ textDecoration: "none" }}
+              >
+                <img
+                  className="randomizedImgs"
+                  src={item.image}
+                  alt={item.title}
+                />
+                <h3 className="productName">{item.title.substring(0, 20)}</h3>
+              </Link>
+            </li>
+          );
+        })}
+      </section>
+      <h2 id="featured-title">Top Sellers</h2>
+      <section className="features-section">
+        {topSellers.map((item) => {
+          return (
+            <li className="product" key={item.id}>
+              <Link
+                to={`/product/${item.id}`}
+                style={{ textDecoration: "none" }}
+              >
+                <img
+                  className="randomizedImgs"
+                  src={item.image}
+                  alt={item.title}
+                />
+                <h3 className="productName">{item.title.substring(0, 20)}</h3>
+              </Link>
+            </li>
+          );
+        })}
       </section>
       <section className="button-section">
         <Link to="/shopall" style={{ textDecoration: "none" }}>
           <button className="shopall-button">All Items</button>
         </Link>
       </section>
-
     </div>
   );
 }
