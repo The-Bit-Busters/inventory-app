@@ -32,24 +32,24 @@ const NavBar = () => {
           />
         </form>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
-          <li>
+          <li className="navbar-btns">
             <Link to="/" style={{ textDecoration: "none" }}>
-              Home
+              <button>HOME</button> 
             </Link>
           </li>
-          <li>
+          <li className="navbar-btns">
             <Link to="/about" style={{ textDecoration: "none" }}>
-              About
+            <button>ABOUT</button> 
             </Link>
           </li>
-          <li>
+          <li className="navbar-btns">
             <Link to="/contact" style={{ textDecoration: "none" }}>
-              Contact
+            <button>Contact</button> 
             </Link>
           </li>
-          <li>
+          <li className="navbar-btns">
             <Link to="/cart" style={{ textDecoration: "none" }}>
-              Cart
+            <button>Cart</button> 
             </Link>
           </li>
         </ul>
