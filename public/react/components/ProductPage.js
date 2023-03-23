@@ -3,6 +3,22 @@ import "../stylesheets/productpage.css";
 import { useParams, Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
 
+  const [isDeleted, setIsDeleted] = useState(false);
+  
+  const handleDelete = async () => {
+    const response = await fetch(`/api/items/${itemId}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    if (response.ok) {
+      console.log("Item deleted successfully");
+    } else {
+      console.error("Failed to delete item:", response);
+    }
+  };
+
 export function ProductPage({ items, addToCart }) {
   const { id } = useParams();
   for (let i = 0; i < items.length; i++) {
@@ -41,6 +57,9 @@ export function ProductPage({ items, addToCart }) {
                     View Cart
                   </Button>
                 </Link>
+                <button className="mt-4 w-100" onClick={handleDelete}>
+                  Delete Item
+                </button>
               </div>
             </div>
           </section>
