@@ -22,7 +22,7 @@ export function ProductPage({items, addToCart}) {
                             <h1 className = "productTitle">{items[i].title}</h1>
                             <p className = "productPrice">${items[i].price}</p>
                             <div className ="productSpecs" >
-                                <p> <span>Product Description :</span>lorem ipsum blah asdbasud uahsdu </p>
+                                <p> <span>Product Description:</span> {items[i].description}</p>
                             </div>
                             <div className = "cartButtons">
                                 <Button onClick={() => addToCart(items[i].id)} variant="dark" size="md" className="mt-4 w-100 addToCartBtn">
