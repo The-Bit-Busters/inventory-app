@@ -12,7 +12,6 @@ const NavBar = () => {
 
     const handleClick = () => {
       setClick(!click);
-      console.log('clicked', click)
     };
 
   return (
