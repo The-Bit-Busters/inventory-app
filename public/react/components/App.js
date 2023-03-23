@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import NavBar  from './NavBar';
 import { HomePage } from './HomePage';
@@ -6,7 +5,6 @@ import ShopAll from './ShopAll';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import '../stylesheets/app.css';
 import About from './About';
-// import and prepend the api url to any fetch calls
 import apiURL from '../api';
 import Contact from './Contact';
 import Footer from './Footer';
