@@ -54,9 +54,7 @@ export function HomePage({ items }) {
           </section>
         </section>
       </section>
-
-      <h2 id="featured-title">Featured Products</h2>
-
+      <h2 id="featured-title">FEATURED PRODUCTS</h2>
       <section className="features-section">
         {featured.map((item) => {
           return (
@@ -70,7 +68,9 @@ export function HomePage({ items }) {
                   src={item.image}
                   alt={item.title}
                 />
-                <h3 className="productName">{item.title.substring(0, 20)}...</h3>
+                <h3 className="productName">
+                  {item.title.substring(0, 20)}...
+                </h3>
               </Link>
             </li>
           );
