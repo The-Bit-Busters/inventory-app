@@ -33,7 +33,7 @@ module.exports = {
        "price":200,
        "description":"Your streetwear style isn't complete without the classic Nike Dunk Low Black & White PandaShoes. Nike updates their classic dunk lowsilhouette with black and white colors that pop with every look. They feature an all-leather upper with a white base and the iconic signature Swoosh at the sides.",
        "category":"shoes",
-       "image":"https://i.pinimg.com/564x/f6/d7/d7/f6d7d79e7f124d7522f6a399fa2b49b6.jpg"
+       "image":"https://i.pinimg.com/474x/2b/69/68/2b6968d791e276c7d9a77d2fda9f67fe.jpg"
     },
     {
        "title":"Play Commes des Garçons",
@@ -61,7 +61,7 @@ module.exports = {
        "price":410,
        "description":"Common Projects' 'Original Achilles' sneakers have gained cult status thanks to their minimalist design and superior construction. This white version is perfect for creating crisp city-smart looks. Wear this pair with rolled-up selvedge denim jeans and a lightweight knit for effortlessly understated flair.",
        "category":"shoes",
-       "image":"https://i.pinimg.com/736x/7d/a8/80/7da880b30e98d4f92237c89147187466.jpg"
+       "image":"https://i.pinimg.com/474x/c2/a3/30/c2a33060aebcca55515bec19c9d51c71.jpg"
     },
     {
        "title":"Fear Of God Essentials Hoodie",
@@ -271,7 +271,7 @@ module.exports = {
       "price": 534,
       "description": "cream white/black, calf leather, colour-block panelled design, logo-print tongue, embossed logo to the side, transparent panel detail, front lace-up fastening, branded footbed, round toe, flat rubber sole",
       "category": "shoes",
-      "image": "https://cdn-images.farfetch-contents.com/19/06/69/85/19066985_41653637_1000.jpg"
+      "image": "https://i.pinimg.com/736x/c0/77/e8/c077e8a87c1f4c9224f720182bdb6b48.jpg"
     },
     {
       "title": "Birkenstock London Suede",
@@ -292,7 +292,7 @@ module.exports = {
       "price": 130,
       "description": `The New Balance 550 Aime Leon Dore Natural Green features smooth white leather uppers. Natural Green leather overlays are on the collar, heel, and inner lining. A pilled, yellow leather "N" logo is embossed on each side of the sneaker. Bringing it all together is a off-white, Natural Green, and yellow outsole.`,
       "category": "shoes",
-      "image": "https://cdn-images.farfetch-contents.com/16/81/96/45/16819645_35804511_1000.jpg"
+      "image": "https://i.pinimg.com/474x/2a/95/9e/2a959efc598595505a57d7151d326fb5.jpg"
     },
  ]
 };
