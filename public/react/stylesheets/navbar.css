@@ -56,10 +56,9 @@ li {
   display: none;
 }
 
-/* .logo-img {
-  width: 5%;
-  margin-left: 
-} */
+.nav-bar img {
+  width: 10%;
+}
 
 @media screen and (max-width: 1040px){
   .nav-menu{

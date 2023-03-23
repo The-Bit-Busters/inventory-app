@@ -3,7 +3,7 @@ import "../stylesheets/navbar.css";
 import { Link } from "react-router-dom";
 import { IoIosSearch } from "react-icons/io";
 import { FaBars, FaTimes } from 'react-icons/fa';
-import logo from "../stylesheets/logo.png"
+import logo from "../stylesheets/logo1.png"
 
 
 const NavBar = () => {
@@ -24,7 +24,7 @@ const NavBar = () => {
     >
       <nav className="nav-bar navbar-static-top">
         <Link to="/" style={{ textDecoration: "none" }}>
-        <img className="logo-img" src={logo} alt="logo"/>
+        <img src={logo} alt="logo"/>
         </Link>
         <form>
           <IoIosSearch className="searchIcon" size="20px" />
