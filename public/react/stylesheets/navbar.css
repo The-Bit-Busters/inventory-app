@@ -59,8 +59,10 @@ li {
   display: none;
 }
 
-.nav-bar img {
-  width: 10%;
+.nav-bar img{
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 1040px){
