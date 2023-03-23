@@ -6,3 +6,12 @@
   border: 2px solid red;
   margin: 1rem 0 1rem 0;
 }
+.cartImg {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  object-fit: cover;
+}
+.table {
+  max-width: 100%;
+}
