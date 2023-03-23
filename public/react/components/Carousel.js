@@ -3,7 +3,7 @@ import "../stylesheets/carousel";
 
 const Carousel = (props) => {
   const { items } = props;
-  console.log(items);
+  // console.log(items);
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [length, setLength] = useState(items.length);
@@ -71,7 +71,7 @@ const Carousel = (props) => {
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
             {items.map((item) => {
-              return <img src={item.image} />;
+              return <img src={item.image} key={item.id}/>;
             })}
           </div>
         </div>

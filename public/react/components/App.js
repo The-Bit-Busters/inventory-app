@@ -20,7 +20,7 @@ export const App = () => {
     try {
       const response = await fetch(`${apiURL}/items`);
       const itemsData = await response.json();
-      console.log(itemsData);
+    //   console.log(itemsData);
       setItems(itemsData);
     } catch (err) {
       console.log("Oh no an error! ", err);
