@@ -1,14 +1,14 @@
 .footer {
   width: 100%;
   padding: 4rem 0;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 .footer-container {
   max-width: 1140px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 40px;
+  grid-gap: 500px;
 }
 
 .left {
@@ -35,6 +35,10 @@
 }
 .social {
   margin-top: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .h4 {
@@ -43,6 +47,10 @@
 }
 p {
   font-size: 1.2rem;
+}
+
+.menu {
+  margin-top: 1rem;
 }
 @media screen and (max-width: 640px) {
   .footer-container {
