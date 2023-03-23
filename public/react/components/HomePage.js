@@ -46,9 +46,8 @@ export function HomePage({ items }) {
         <section className="greeting">
             <h1 id='home-title'>The Bit Buckets Inventory!</h1>
         </section>
-        <section className="features-section">
             <h2 id='featured-title'>Featured Products</h2>
-            <ul className='featured-parent'>
+        <section className="features-section">
                     {featured.map((item) => {
                         return (
                             <li className="product" key={item.id}>
@@ -59,13 +58,9 @@ export function HomePage({ items }) {
                             </li>
                     );
                     })}
-            </ul>
         </section>
-        <section className="products-section">
             <h2 id='featured-title'>Products</h2>
-
-
-        <ul className="featured-parent">
+        <section className="features-section">
             {topSellers.map((item) => {
                 return (
                     <li className="product" key={item.id}>
@@ -76,7 +71,6 @@ export function HomePage({ items }) {
                     </li>
                 );
             })}
-        </ul>
       </section>
       <section className="button-section">
         <Link to="/shopall" style={{ textDecoration: "none" }}>

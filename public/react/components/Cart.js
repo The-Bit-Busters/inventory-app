@@ -43,7 +43,7 @@ const Cart = ({ cart }) => {
       <Container className="cartContainer">
         <Row>
           <div className="col-9 cartShow"> 
-            <Table bordered hover responsive="sm" style={{ tableLayout: "fixed" }}>
+            <Table className="table" bordered hover responsive="sm" style={{ tableLayout: "fixed" }}>
               <thead>
                 <tr>
                   <th>Product Image</th>
