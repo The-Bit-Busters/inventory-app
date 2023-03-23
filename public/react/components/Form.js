@@ -59,13 +59,18 @@ function Form() {
           />
         </label>
         <label>
-          Category: (mens, womens, shoes)
-          <input
-            type="text"
-            name="category"
+          Category:
+          <select
             value={inputs.category || ""}
+            name="cateory"
+            id="category-dropdown"
             onChange={handleChange}
-          />
+          >
+            <option value="">-- Select a Category --</option>
+            <option value="mens">Mens</option>
+            <option value="womens">Womens</option>
+            <option value="shoes">Shoes</option>
+          </select>
         </label>
         <label>
           Image:
