@@ -42,7 +42,7 @@ export const App = () => {
 			<div className='mainContainer'>
 			<Routes>
 				<Route path="/" element={<HomePage items={items}/>} />
-				<Route path="/shopall" element={<ShopAll />} />
+				<Route path="/shopall" element={<ShopAll items={items}/>} />
 				<Route path="/about" element={<About />} />
 				<Route path="/contact" element={<Contact />} />
 				<Route path="/cart" element={<Cart />} />
