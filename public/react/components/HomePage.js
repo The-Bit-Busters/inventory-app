@@ -41,9 +41,6 @@ export function HomePage({ items }) {
 
   return (
     <div className="homepage">
-      <section className="greeting">
-        <h1 id="home-title">The Bit Bucket</h1>
-      </section>
       <h2 id="featured-title">Featured Products</h2>
       <section className="features-section">
         {featured.map((item) => {
