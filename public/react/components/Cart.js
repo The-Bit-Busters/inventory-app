@@ -7,6 +7,7 @@ const Cart = ({ cart }) => {
   const [tax, setTax] = React.useState(0);
   const [total, setTotal] = React.useState(0);
 
+
   React.useEffect(() => {
     let total = 0;
     cart.forEach((item) => {

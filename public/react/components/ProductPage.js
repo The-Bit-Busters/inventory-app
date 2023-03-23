@@ -23,11 +23,11 @@ export function ProductPage({items, addToCart}) {
                             <div className ="productSpecs" >
                                 <p> <span>Product Description :</span>lorem ipsum blah asdbasud uahsdu </p>
                             </div>
-                            <div className = "CartButtons">
+                            <div className = "cartButtons">
                                 <button 
                                     onClick={() => addToCart(items[i].id)}
-                                className = "buttons">Add to Cart</button>
-                                <button className = "buttons">View Cart</button>
+                                className = "addToCartBtn buttons">Add to Cart</button>
+                                <button className = "addToCartBtn buttons">View Cart</button>
                             </div>
                         </div>
                     </section>
