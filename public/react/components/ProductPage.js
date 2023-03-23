@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import "../stylesheets/productpage.css";
 import { useParams, Link, useNavigate } from "react-router-dom";
@@ -9,7 +8,7 @@ import apiURL from "../api";
 export function ProductPage({ items, addToCart }) {
   const { id } = useParams();
   const navigate = useNavigate();
-  
+
   const itemId = parseInt(id);
   const [showModal, setShowModal] = useState(false);
   const [title, setTitle] = useState("");
@@ -18,36 +17,31 @@ export function ProductPage({ items, addToCart }) {
   const [image, setImage] = useState("");
   const [category, setCategory] = useState("");
 
-
   const handleClick = () => {
     setShowModal(!showModal);
-    console.log(showModal)
+    console.log(showModal);
   };
 
   const onClose = () => {
     setShowModal(false);
-    window.location.reload()
+    window.location.reload();
   };
   const handleSubmit = async (event) => {
     event.preventDefault();
     const response = await fetch(`${apiURL}/items/${itemId}`, {
-      method: 'PUT',
+      method: "PUT",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify({title, description, price, image, category}),
+      body: JSON.stringify({ title, description, price, image, category }),
     });
     if (response.ok) {
       const item = await response.json();
-      console.log('Item updated:', item);
+      console.log("Item updated:", item);
     } else {
-      console.error('Failed to update item:', response);
+      console.error("Failed to update item:", response);
     }
   };
-
-=======
-  
-
 
   for (let i = 0; i < items.length; i++) {
     if (items[i].id == id) {
@@ -60,19 +54,32 @@ export function ProductPage({ items, addToCart }) {
                 className="specificProductImg"
                 alt={items[i].title}
               />
-
-              <button className="productButton" onClick={handleClick}>
-                Update Item
-              </button>
+              <div className="product-buttons">
+                <button className="productButton" onClick={handleClick}>
+                  Update Item
+                </button>
                 <button className="productButton">Delete Item</button>
                 <button className="productButton" onClick={() => navigate("/")}>
                   Go Back
                 </button>
+              </div>
+
               {showModal && (
-                <UpdateItemModal setTitle={setTitle} setDescription={setDescription} setPrice={setPrice} handleSubmit={handleSubmit}
-                title={title} description={description} price={price}
-                category={category} setCategory={setCategory} image={image} setImage={setImage}
-                 item={items[i]} onClose={onClose} />
+                <UpdateItemModal
+                  setTitle={setTitle}
+                  setDescription={setDescription}
+                  setPrice={setPrice}
+                  handleSubmit={handleSubmit}
+                  title={title}
+                  description={description}
+                  price={price}
+                  category={category}
+                  setCategory={setCategory}
+                  image={image}
+                  setImage={setImage}
+                  item={items[i]}
+                  onClose={onClose}
+                />
               )}
             </div>
             <div className="productDescription">
@@ -106,4 +113,3 @@ export function ProductPage({ items, addToCart }) {
     }
   }
 }
-

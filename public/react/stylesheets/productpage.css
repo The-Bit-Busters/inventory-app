@@ -22,7 +22,7 @@
 .productButton {
   margin-top: 2em;
   margin-bottom: 2em;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   font-size: 1.5em;
   margin-left: 1rem;
   font-size: 1rem;
@@ -45,8 +45,13 @@
 .addToCartBtn {
   margin-top: 1em;
   margin-bottom: 1em;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   font-size: 1.5em;
+}
+
+.product-buttons {
+  display: flex;
+  flex-direction: row;
 }
 
 /*for the modal */
