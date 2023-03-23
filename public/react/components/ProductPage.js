@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../stylesheets/productpage.css";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
 
 export function ProductPage({ items, addToCart }) {
   const { id } = useParams();
+  const navigate = useNavigate();
+
+
   for (let i = 0; i < items.length; i++) {
     if (items[i].id == id) {
       return (
@@ -16,7 +19,13 @@ export function ProductPage({ items, addToCart }) {
                 className="specificProductImg"
                 alt={items[i].title}
               />
-              <button className="productButton">Update Item</button>
+              <div className="product-btn">
+                <button className="productButton">Update Item</button>
+                <button className="productButton">Delete Item</button>
+                <button className="productButton" onClick={() => navigate("/")}>
+                  Go Back
+                </button>
+              </div>
             </div>
             <div className="productDescription">
               <h1 className="productTitle">{items[i].title}</h1>
