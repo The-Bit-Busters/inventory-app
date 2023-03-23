@@ -41,5 +41,8 @@
     align-items: center;
 }
 .addToCartBtn {
-    width: 10%
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 1px solid red;
+    font-size: 1.5em;
 }
