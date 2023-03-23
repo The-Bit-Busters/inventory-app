@@ -60,7 +60,7 @@ const Cart = ({ cart }) => {
                     </td>
                     <td>{item.title}</td>
                     <td>${item.price}</td>
-                    <td>1</td>
+                    <td>1 <button>Delete</button> </td>
                   </tr>
                 ))}
               </tbody>

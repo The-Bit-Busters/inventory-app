@@ -46,10 +46,6 @@ export const App = () => {
 	}, []);
 
 
-	useEffect(() => {
-		fetchItems();
-	}, []);
-
 	return (
 		<main className='appContainer'>	
 			<NavBar />
@@ -59,7 +55,7 @@ export const App = () => {
 				<Route path="/shopall" element={<ShopAll items={items}/>} />
 				<Route path="/about" element={<About />} />
 				<Route path="/contact" element={<Contact />} />
-				<Route path="/cart" element={<Cart cart={cart}  />} />
+				<Route path="/cart" element={<Cart cart={cart}  removeItem={removeItem}/>} />
 				<Route path="/product/:id" element={<ProductPage addToCart={addToCart} removeItem={removeItem} items={items}/>} />
 			</Routes>
 			</div>
