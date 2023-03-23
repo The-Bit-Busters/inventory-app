@@ -52,7 +52,7 @@ export const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route
             path="/cart"
-            element={<Cart cart={cart} removeItem={removeItem} />}
+            element={<Cart cart={cart} setCart={setCart} removeItem={removeItem} />}
           />
           <Route
             path="/product/:id"

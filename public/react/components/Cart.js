@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Table, Row, Button } from "react-bootstrap";
 import "../stylesheets/cart.css";
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, setCart }) => {
   const [subTotal, setSubTotal] = React.useState(0);
   const [tax, setTax] = React.useState(0);
   const [total, setTotal] = React.useState(0);
@@ -34,6 +34,13 @@ const Cart = ({ cart }) => {
     tax = (Math.round(tax * 100) / 100).toFixed(2);
     setTax(tax);
   }, [cart]);
+
+
+  const deleteItem = (id) => {
+    const newCart = cart.filter((item) => item.id !== id);
+    setCart(newCart);
+    console.log(cart)
+  };
 
   return (
     <div>
@@ -69,7 +76,9 @@ const Cart = ({ cart }) => {
                     <td>{item.title}</td>
                     <td>${item.price}</td>
                     <td>
-                      1 <button>Delete</button>{" "}
+                      1 <button 
+                      onClick={() => deleteItem(item.id)}
+                      >Delete</button>{" "}
                     </td>
                   </tr>
                 ))}
