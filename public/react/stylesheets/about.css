@@ -1,6 +1,7 @@
 .mission-img {
   max-width: 100%;
   max-height: 100%;
+  margin-bottom: 2%;
 }
 
 .core-values {
@@ -11,6 +12,7 @@
   display: flex;
   align-items: center;
   font-family:'Times New Roman', Times, serif;
+  margin-bottom: 2%;
 }
 
 .core-p {

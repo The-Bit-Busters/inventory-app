@@ -55,6 +55,11 @@ li {
 .burger{
   display: none;
 }
+
+.nav-bar img {
+  width: 10%;
+}
+
 @media screen and (max-width: 1040px){
   .nav-menu{
       flex-direction: column;
