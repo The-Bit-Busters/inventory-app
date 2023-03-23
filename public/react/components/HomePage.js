@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link  } from "react-router-dom";
 import "../stylesheets/homepage.css";
 
 export function HomePage({ items }) {
   const [featured, setFeatured] = useState([]);
   const [topSellers, setTopSellers] = useState([]);
+  const [product, setProduct] = useState([]);
 
   async function fetchFeaturedProducts() {
     let n = 3;
@@ -30,6 +31,15 @@ export function HomePage({ items }) {
     fetchFeaturedProducts();
     fetchTopSellers();
   }, [items]);
+
+  async function specificProduct() {
+    const response = await fetch(`${apiURL}/items/${id}`);
+    const productData = await response.json();
+    setProduct(productData);
+    }
+
+
+
     return (
     <div className= "homepage">
         <section className="greeting">
@@ -38,14 +48,16 @@ export function HomePage({ items }) {
         <section className="features-section">
             <h2 id='featured-title'>Featured Products</h2>
             <ul className='featured-parent'>
-            {featured.map((item) => {
-            return (
-              <li className="product" key={item.id}>
-                <img className="randomizedImgs" src={item.image} alt={item.title} />
-                <h3 className="productName">{item.title.substring(0, 20)}...</h3>
-              </li>
-            );
-          })}
+                    {featured.map((item) => {
+                        return (
+                            <li className="product" key={item.id}>
+                                    <Link to={`/product/${item.id}`} style={{ textDecoration: "none" }}>
+                                        <img className="randomizedImgs" src={item.image} alt={item.title} />
+                                        <h3 className="productName">{item.title.substring(0, 20)}</h3>
+                                    </Link>
+                            </li>
+                    );
+                    })}
             </ul>
         </section>
         <section className="products-section">
@@ -53,14 +65,16 @@ export function HomePage({ items }) {
 
 
         <ul className="featured-parent">
-        {topSellers.map((item) => {
-            return (
-              <li className="product" key={item.id}>
-                <img className="randomizedImgs" src={item.image} alt={item.title} />
-                <h3 className="productName">{item.title.substring(0, 20)}</h3>
-              </li>
-            );
-          })}
+            {topSellers.map((item) => {
+                return (
+                    <li className="product" key={item.id}>
+                        <Link to={`/product/${item.id}`}  style={{ textDecoration: "none" }}>
+                            <img className="randomizedImgs" src={item.image} alt={item.title} />
+                            <h3 className="productName">{item.title.substring(0, 20)}</h3>
+                        </Link> 
+                    </li>
+                );
+            })}
         </ul>
       </section>
       <section className="button-section">
@@ -68,6 +82,7 @@ export function HomePage({ items }) {
           <button className="shopall-button">All Items</button>
         </Link>
       </section>
+
     </div>
   );
 }

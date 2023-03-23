@@ -1,0 +1,36 @@
+.productPage {
+    height: 60vh;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.specificProductImg {
+    height: 80%;
+    width: 50%;
+    object-fit: contain;
+    background-color: white;
+}
+.productButton {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: 1px solid red;
+    font-size: 1.5em;
+}
+.singularProduct {
+    display: flex;
+    width: auto;
+    justify-content: space-evenly;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,28 +1,33 @@
 import React from 'react'
-import '../stylesheets/ProductPage.css'
+import '../stylesheets/productpage.css'
+import { useParams } from 'react-router-dom';
 
-export function ProductPage() {
-    return (
-        <div className = "ProductPage">
-            <section classname = "product">
-                <img src="" alt="productImage"/>
-                <div className = "productDescription">
-                    <h1 className = "productTitle">Product Title</h1>
-                    <h2 className = "productPrice">$XX.XX</h2>
-                    <div className ="productSpecs">
-                        <p> Product Description with specs and details</p>
-                    </div>
-                    <div className = "CartButtons">
-                        <button className = "buttons">Add to Cart</button>
-                        <button className = "buttons">View Cart</button>
-                    </div>
+export function ProductPage({items}) {
+    const { id } = useParams();
+    for(let i = 0; i < items.length; i++){
+        if(items[i].id == id){
+            return(
+                <div className = "productPage"  >
+                    <section className = "singularProduct">
+                        <div className='containerLeft'>
+                            <img src={items[i].image} className="specificProductImg" alt={items[i].title} />
+                            <button className = "productButton">
+                                Update Item
+                            </button>
+                        </div>
+                        <div className = "productDescription">
+                            <h1 className = "productTitle">{items[i].title}</h1>
+                            <h2 className = "productPrice">${items[i].price}</h2>
+                            <div className ="productSpecs" >
+                                <p> <span>Product Description :</span>lorem ipsum blah asdbasud uahsdu </p>
+                            </div>
+                            <div className = "CartButtons">
+                                <button className = "buttons">Add to Cart</button>
+                                <button className = "buttons">View Cart</button>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-            </section>
-            <section classname = "Update button">
-                <button className = "button">
-                    Update Item
-                </button>
-            </section>
-        </div>
-    )
+        )}
+    }
 }
