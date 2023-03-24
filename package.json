@@ -4,10 +4,9 @@
   "scripts": {
     "test": "jest --watch-all --verbose",
     "test:coverage": "jest --verbose --collect-coverage",
-    "client-dev": "parcel public/index.html --open",
-    "server-dev": "nodemon server/server.js",
     "seed": "node server/seed.js",
-    "start": "parcel build public/index.html && npm run seed && node server/server.js"
+    "build": "parcel build public/index.html",
+    "start": "npm run build && npm run seed && node server/server.js"
   },
   "dependencies": {
     "@babel/preset-env": "^7.15.0",
