@@ -1,0 +1,12 @@
+#featured-title{
+    margin-top: 3rem;
+
+}
+button {
+    margin: 0 auto;
+}
+.addBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

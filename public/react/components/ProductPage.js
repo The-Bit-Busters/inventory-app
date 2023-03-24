@@ -22,7 +22,6 @@ export function ProductPage({ items, addToCart }) {
 
   const handleClick = () => {
     setShowModal(!showModal);
-    console.log(showModal);
   };
 
   const onClose = () => {
