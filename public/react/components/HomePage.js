@@ -41,6 +41,19 @@ export function HomePage({ items }) {
 
   return (
     <div className="homepage">
+      <section className="greeting">
+        <h1 id="home-title">The Bit Bucket</h1>
+      </section>
+      <section className="picture-container">
+        <section className="cta-btn">
+          <h2 className="cta">THE PLATFORM FOR PERSONAL STYLE</h2>
+          <section className="button-section">
+            <Link to="/shopall" style={{ textDecoration: "none" }}>
+              <button className="shopall-button">Shop All Items</button>
+            </Link>
+          </section>
+        </section>
+      </section>
       <h2 id="featured-title">FEATURED PRODUCTS</h2>
       <section className="features-section">
         {featured.map((item) => {
@@ -55,7 +68,9 @@ export function HomePage({ items }) {
                   src={item.image}
                   alt={item.title}
                 />
-                <h3 className="productName">{item.title.substring(0, 20)}</h3>
+                <h3 className="productName">
+                  {item.title.substring(0, 20)}...
+                </h3>
               </Link>
             </li>
           );
@@ -80,11 +95,6 @@ export function HomePage({ items }) {
             </li>
           );
         })}
-      </section>
-      <section className="button-section">
-        <Link to="/shopall" style={{ textDecoration: "none" }}>
-          <button className="shopall-button">ALL ITEMS</button>
-        </Link>
       </section>
     </div>
   );

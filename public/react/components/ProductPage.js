@@ -5,8 +5,11 @@ import { Button } from "react-bootstrap";
 import UpdateItemModal from "./UpdateModal";
 import apiURL from "../api";
 
+
+
 export function ProductPage({ items, addToCart }) {
   const { id } = useParams();
+
   const navigate = useNavigate();
 
   const itemId = parseInt(id);
@@ -19,7 +22,6 @@ export function ProductPage({ items, addToCart }) {
 
   const handleClick = () => {
     setShowModal(!showModal);
-    console.log(showModal);
   };
 
   const onClose = () => {
@@ -42,6 +44,24 @@ export function ProductPage({ items, addToCart }) {
       console.error("Failed to update item:", response);
     }
   };
+  
+  const handleDelete = async (event) => {
+    window.location.reload();
+    const response = await fetch(`${apiURL}/items/${itemId}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    if (response.ok) {
+      const item = await response.json();
+      console.log("Item deleted:", item);
+    } else {
+      console.error("Failed to delete item:", response);
+    }
+  };
+
+
 
   for (let i = 0; i < items.length; i++) {
     if (items[i].id == id) {
@@ -58,8 +78,8 @@ export function ProductPage({ items, addToCart }) {
                 <button className="productButton" onClick={handleClick}>
                   Update Item
                 </button>
-                <button className="productButton">Delete Item</button>
-                <button className="productButton" onClick={() => navigate("/")}>
+                <button onClick={handleDelete} className="productButton">Delete Item</button>
+                <button className="productButton" onClick={() => navigate("/shopall")}>
                   Go Back
                 </button>
               </div>

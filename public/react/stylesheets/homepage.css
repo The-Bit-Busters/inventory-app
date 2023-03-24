@@ -1,7 +1,7 @@
 #home-title {
   font-size: 2.5em;
   font-weight: 300;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   text-align: center;
 }
 .greeting {
@@ -46,12 +46,15 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  background: transparent;
 }
 .shopall-button {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  /* margin-top: 2em;
+  margin-bottom: 2em; */
   /* border: 1px solid red; */
   font-size: 1.5em;
+  background: transparent;
+  margin-top: 0;
 }
 .randomizedImgs {
   height: 100%;
@@ -71,6 +74,32 @@
 .productName,
 .randomizedImgs {
   background-color: rgb(247, 247, 247)
+}
+
+.picture-container {
+  width: 100%;
+  background-image: url("https://static01.nyt.com/images/2023/03/09/multimedia/07PARIS-DIARY-05-jbqh/07PARIS-DIARY-05-jbqh-superJumbo.jpg?quality=75&auto=webp");
+  /* background-image: url("https://static01.nyt.com/images/2023/03/07/multimedia/07PARIS-DIARY-09-fbcl/07PARIS-DIARY-09-fbcl-superJumbo.jpg?quality=75&auto=webp"); */
+  background-size: cover;
+  height: 90vh;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  color: white;
+}
+
+.cta-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
 }
 /* create a hover effect for the product name with pointer */
 .productName:hover,

@@ -65,10 +65,10 @@ module.exports = {
       title: "Oversized Boyfriend Sweatpants",
       price: 88,
       description:
-        "Crafted from a soft cotton blend and featuring an extra-slouchy cut, these MWL by Madewell sweatpants are a pair you'll want to live in all weekend long. Keep your look coordinated by matching them with the label's polo sweatshirt.",
+        "Crafted from a soft cotton blend and featuring an extra-slouchy cut, these Nike sweatpants are a pair you'll want to live in all weekend long. Keep your look coordinated by matching them with the label's polo sweatshirt.",
       category: "womens",
       image:
-        "https://i.pinimg.com/564x/b5/86/62/b58662dd86a0a8414c44eae1a3545690.jpg",
+        "https://i.pinimg.com/474x/5c/50/f4/5c50f4426dde5c6671fe466a7a43460f.jpg",
     },
     {
       title: "Archilles Leather Sneakers",
