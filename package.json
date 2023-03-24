@@ -7,7 +7,8 @@
     "client-dev": "parcel public/index.html --open",
     "server-dev": "nodemon server.js",
     "seed": "node server/seed.js",
-    "start": "parcel build public/index.html && npm run seed && node server.js"
+    "start": "react-scripts start",
+    "start-front": "parcel build public/index.html"
   },
   "dependencies": {
     "@babel/preset-env": "^7.15.0",
