@@ -8,3 +8,6 @@ dist
 
 #sqlite
 *.sqlite
+
+# Local Netlify folder
+.netlify
