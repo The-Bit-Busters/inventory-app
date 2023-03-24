@@ -23,7 +23,7 @@ const ShopAll = ({ items }) => {
   };
 
   const addItems = async (event) => {
-
+    window.location.reload();
     console.log('clicked')
     const response = await fetch(`${apiURL}/items`, {
       method: "POST",

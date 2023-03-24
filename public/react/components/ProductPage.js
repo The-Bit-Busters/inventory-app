@@ -46,7 +46,7 @@ export function ProductPage({ items, addToCart }) {
   };
   
   const handleDelete = async (event) => {
-    event.preventDefault();
+    window.location.reload();
     const response = await fetch(`${apiURL}/items/${itemId}`, {
       method: "DELETE",
       headers: {
