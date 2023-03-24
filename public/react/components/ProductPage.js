@@ -45,19 +45,22 @@ export function ProductPage({ items, addToCart }) {
     }
   };
   
-    const handleDelete = () => {
-    fetch('/api/items/id', { method: 'DELETE' })
-      .then(response => {
-        if (response.ok) {
-          console.log('Item successfully deleted');
-        } else {
-          console.error('Could not delete item');
-        }
-      })
-      .catch(error => {
-        console.error(error);
-      });
-  }
+  const handleDelete = async (event) => {
+    event.preventDefault();
+    const response = await fetch(`${apiURL}/items/${itemId}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    if (response.ok) {
+      const item = await response.json();
+      console.log("Item deleted:", item);
+    } else {
+      console.error("Failed to delete item:", response);
+    }
+  };
+
 
 
   for (let i = 0; i < items.length; i++) {
@@ -75,7 +78,7 @@ export function ProductPage({ items, addToCart }) {
                 <button className="productButton" onClick={handleClick}>
                   Update Item
                 </button>
-                <button className="productButton">Delete Item</button>
+                <button onClick={handleDelete} className="productButton">Delete Item</button>
                 <button className="productButton" onClick={() => navigate("/shopall")}>
                   Go Back
                 </button>
@@ -122,9 +125,6 @@ export function ProductPage({ items, addToCart }) {
                     View Cart
                   </Button>
                 </Link>
-                <button className="mt-4 w-100" onClick={handleDelete}>
-                  Delete Item
-                </button>
               </div>
             </div>
           </section>
