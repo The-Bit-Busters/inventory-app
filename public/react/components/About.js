@@ -1,5 +1,6 @@
 import React from "react";
 import "../stylesheets/about.css";
+import aboutimg from "../stylesheets/aboutimg.png";
 
 const About = () => {
   return (
@@ -7,7 +8,7 @@ const About = () => {
       <div className="mission-statement">
         <img
           className="mission-img"
-          src="https://brandsbyovo.com/wp-content/uploads/everlane-radical-transparency-1400x751@2x.png"
+          src={aboutimg}
           alt="company mission"
         />
       </div>
