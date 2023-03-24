@@ -7,7 +7,8 @@
     "client-dev": "parcel public/index.html --open",
     "server-dev": "nodemon server.js",
     "seed": "node server/seed.js",
-    "start": "parcel build public/index.html && npm run seed && node server.js"
+    "start": "react-scripts start",
+    "start-front": "parcel build public/index.html"
   },
   "dependencies": {
     "@babel/preset-env": "^7.15.0",
@@ -39,6 +40,7 @@
     "@babel/runtime": "^7.21.0",
     "@testing-library/react": "^12.0.0",
     "jest": "^27.5.1",
+    "netlify-cli": "^13.2.1",
     "regenerator-runtime": "^0.13.11"
   }
 }
