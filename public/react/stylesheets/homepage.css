@@ -78,9 +78,10 @@
 
 .picture-container {
   width: 100%;
-  background-image: url("https://www.instyle.com/thmb/i79mObn8ojAfKnAnsSdGoGytHKA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/090722-Stylist-Trends-Lead-2000-b22fc1d45a494375b4b43e33659e9bf6.jpg");
+  background-image: url("https://static01.nyt.com/images/2023/03/09/multimedia/07PARIS-DIARY-05-jbqh/07PARIS-DIARY-05-jbqh-superJumbo.jpg?quality=75&auto=webp");
+  /* background-image: url("https://static01.nyt.com/images/2023/03/07/multimedia/07PARIS-DIARY-09-fbcl/07PARIS-DIARY-09-fbcl-superJumbo.jpg?quality=75&auto=webp"); */
   background-size: cover;
-  height: 50vh;
+  height: 90vh;
   margin-bottom: 2rem;
   display: flex;
   justify-content: center;
