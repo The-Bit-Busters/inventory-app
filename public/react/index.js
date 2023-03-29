@@ -1,13 +1,15 @@
 import React from "react";
+import { createRoot } from "react-dom/client";
 import "regenerator-runtime/runtime";
 import { BrowserRouter } from "react-router-dom";
-import ReactDOM from "react-dom";
 
 import { App } from "./components/App";
 
-ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
-  document.getElementById("root")
+const root = createRoot(document.getElementById("root"));
+root.render(
+  <>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </>
 );
