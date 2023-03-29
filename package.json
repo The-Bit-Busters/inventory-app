@@ -1,6 +1,7 @@
 {
   "name": "inventoryapp",
   "version": "1.2.0",
+  "source": "/public/index.html",
   "scripts": {
     "test": "jest --watch-all --verbose",
     "test:coverage": "jest --verbose --collect-coverage",
