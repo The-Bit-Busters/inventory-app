@@ -1,5 +1,5 @@
-const { db } = require("./server/models");
-const app = require("./server/app");
+const { db } = require("./models");
+const app = require("../server/app");
 
 const PORT = process.env.PORT || 3000;
 
