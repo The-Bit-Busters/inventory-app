@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "../stylesheets/carousel";
+import '../stylesheets/carousel.css';
 
 const Carousel = (props) => {
   const { items } = props;

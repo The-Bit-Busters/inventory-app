@@ -1,13 +1,14 @@
 {
   "name": "inventoryapp",
   "version": "1.2.0",
+  "source": "/public/index.html",
   "scripts": {
     "test": "jest --watch-all --verbose",
     "test:coverage": "jest --verbose --collect-coverage",
     "client-dev": "parcel public/index.html --open",
-    "server-dev": "nodemon server/server.js",
+    "server-dev": "nodemon server.js",
     "seed": "node server/seed.js",
-    "start": "parcel build public/index.html && npm run seed && node server/server.js"
+    "start": "parcel build public/index.html && npm run seed && node server.js"
   },
   "dependencies": {
     "@babel/preset-env": "^7.15.0",
@@ -23,7 +24,6 @@
     "mdb-react-ui-kit": "^5.1.0",
     "morgan": "1.10.0",
     "nodemon": "^2.0.19",
-    "parcel-bundler": "^1.12.5",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
@@ -39,6 +39,8 @@
     "@babel/runtime": "^7.21.0",
     "@testing-library/react": "^12.0.0",
     "jest": "^27.5.1",
+    "parcel": "^2.8.3",
+    "process": "^0.11.10",
     "regenerator-runtime": "^0.13.11"
   }
 }
