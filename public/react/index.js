@@ -7,9 +7,6 @@ import { App } from "./components/App";
 
 const root = createRoot(document.getElementById("root"));
 
-if (process.env.NODE_ENV === "development") {
-  require("react-refresh/runtime").injectIntoGlobalHook(window);
-}
 
 root.render(
   <>
