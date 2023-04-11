@@ -9,7 +9,8 @@
     "server-dev": "nodemon server.js",
     "seed": "node server/seed.js",
     "build": "parcel build public/index.html --public-url ./",
-    "start": "parcel serve public/index.html && npm run seed && node server.js"
+    "serve": "node server.js",
+    "start": "npm run build && npm run seed && npm run serve"
   },
   "dependencies": {
     "@types/react": "^18.0.28",
