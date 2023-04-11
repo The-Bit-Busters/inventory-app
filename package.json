@@ -8,7 +8,8 @@
     "client-dev": "parcel public/index.html --open",
     "server-dev": "nodemon server.js",
     "seed": "node server/seed.js",
-    "start": "parcel build public/index.html && npm run seed && node server.js"
+    "build": "parcel build public/index.html --public-url ./",
+    "start": "parcel serve public/index.html && npm run seed && node server.js"
   },
   "dependencies": {
     "@babel/preset-env": "^7.15.0",
