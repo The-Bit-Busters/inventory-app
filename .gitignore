@@ -5,7 +5,7 @@ node_modules/
 .env
 dist
 .cache
-.parcel-cache
+# .parcel-cache
 
 #sqlite
 *.sqlite
