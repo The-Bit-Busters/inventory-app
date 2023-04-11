@@ -6,6 +6,7 @@ node_modules/
 # dist
 .cache
 .parcel-cache
+package-lock.json
 
 #sqlite
 *.sqlite
@@ -13,4 +14,4 @@ node_modules/
 # Local Netlify folder
 .netlify
 
-package-lock.json
+
